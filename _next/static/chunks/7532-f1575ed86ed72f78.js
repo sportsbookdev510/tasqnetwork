@@ -710,7 +710,7 @@
           symbol: "$TasQ",
           address:
             l.env.NEXT_PUBLIC_TASQ_TOKEN_ADDRESS ||
-            "0xComingSoon",
+            "0xd5db700525a342ed4b81967a5a82a4f903efa170",
           decimals: Number(l.env.NEXT_PUBLIC_TASQ_TOKEN_DECIMALS || 18),
           minHold: l.env.NEXT_PUBLIC_TASQ_MIN_HOLD || "",
         },
