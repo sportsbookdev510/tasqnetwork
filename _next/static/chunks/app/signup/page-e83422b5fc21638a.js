@@ -462,7 +462,7 @@
           github:
             r.env.NEXT_PUBLIC_GITHUB_URL || "https://github.com/tasqProject",
           gitbook: r.env.NEXT_PUBLIC_GITBOOK_URL || "",
-          x: r.env.NEXT_PUBLIC_X_URL || "https://x.com/tasq_x",
+          x: r.env.NEXT_PUBLIC_X_URL || "https://x.com/tasq_network",
           email: r.env.NEXT_PUBLIC_CONTACT_EMAIL || "",
           paper: "/tasq-yellow-paper.pdf",
         },
