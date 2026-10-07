@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en" class="__variable_8adcd2 __variable_46451f __variable_5dce4b">
+
+<head>
+    <meta charSet="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preload" href="/_next/static/media/0b78ff376f6b9734-s.p.woff2" as="font" crossorigin=""
+        type="font/woff2" />
+    <link rel="preload" href="/_next/static/media/36966cca54120369-s.p.woff2" as="font" crossorigin=""
+        type="font/woff2" />
+    <link rel="preload" href="/_next/static/media/723e11e5093b8e80.p.woff2" as="font" crossorigin=""
+        type="font/woff2" />
+    <link rel="preload" as="image" href="/logo-mark.png" />
+    <link rel="stylesheet" href="/_next/static/css/d82c0453da8e13e4.css" data-precedence="next" />
+    <link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/webpack-585fe5fff95d53df.js" />
+    <script src="/_next/static/chunks/fd9d1056-04e92d766abed7f8.js" async=""></script>
+    <script src="/_next/static/chunks/2117-f831af7db1629022.js" async=""></script>
+    <script src="/_next/static/chunks/main-app-be3d940aef6bd3eb.js" async=""></script>
+    <script src="/_next/static/chunks/2972-955172a662364f30.js" async=""></script>
+    <script src="/_next/static/chunks/7532-f1575ed86ed72f78.js" async=""></script>
+    <script src="/_next/static/chunks/app/page-091095158c37399d.js" async=""></script>
+    <script src="/_next/static/chunks/app/layout-52002edde858f62f.js" async=""></script>
+    <meta name="theme-color" content="#07060b" />
+    <meta name="color-scheme" content="dark" />
+    <title>TasQ | Private AI compute</title>
+    <meta name="description"
+        content="Rent and lend GPU compute for AI without exposing your models or data. Attested enclaves, redundant execution with hidden audits, and proofs where they are practical." />
+    <meta name="application-name" content="TasQ" />
+    <link rel="author" href="https://tasqnetwork.io" />
+    <meta name="author" content="The TasQ Project" />
+    <meta name="keywords"
+        content="private AI compute,confidential computing,attested enclaves,trusted execution environment,GPU marketplace,AI inference,verifiable compute,post-quantum cryptography,TasQ" />
+    <meta name="creator" content="The TasQ Project" />
+    <meta name="publisher" content="The TasQ Project" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1" />
+    <meta name="category" content="technology" />
+    <link rel="canonical" href="https://tasqnetwork.io" />
+    <meta property="og:title" content="TasQ | Private AI compute" />
+    <meta property="og:description"
+        content="Private AI compute. The machine owner never sees what you run, and you only pay for results you can verify." />
+    <meta property="og:url" content="https://tasqnetwork.io" />
+    <meta property="og:site_name" content="TasQ" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt"
+        content="TasQ. Your AI, your data. Private AI compute with attested enclaves, hidden audits and verifiable results." />
+    <meta property="og:image" content="https://tasqnetwork.io/opengraph-image.png?4025671aed8fba66" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="TasQ | Private AI compute" />
+    <meta name="twitter:description"
+        content="Private AI compute. The machine owner never sees what you run, and you only pay for results you can verify." />
+    <meta name="twitter:image:type" content="image/png" />
+    <meta name="twitter:image:width" content="1200" />
+    <meta name="twitter:image:height" content="630" />
+    <meta name="twitter:image:alt"
+        content="TasQ. Your AI, your data. Private AI compute with attested enclaves, hidden audits and verifiable results." />
+    <meta name="twitter:image" content="https://tasqnetwork.io/twitter-image.png?4025671aed8fba66" />
+    <link rel="icon" href="/icon.png?3a38c5fb4c69e589" type="image/png" sizes="256x256" />
+    <link rel="apple-touch-icon" href="/apple-icon.png?29dd4eab969f4876" type="image/png" sizes="180x180" />
+    <meta name="next-size-adjust" />
+    <script src="/_next/static/chunks/polyfills-42372ed130431b0a.js" noModule=""></script>
+</head>
+
+<body>
+    <header class="site-nav">
+        <div class="container site-nav-inner"><a class="logo" aria-label="TasQ home" href="/"><img src="/logo-mark.png"
+                    alt="" width="32" height="32"
+                    style="width:32px;height:32px;border-radius:50%" /><span>TasQ</span></a>
+            <nav class="site-nav-links" aria-label="Primary"><a href="/#product">Product</a><a href="/#how">How it
+                    works</a><a href="/token">$TasQ</a><a href="/benchmark">Benchmarks</a><a href="/faq">FAQ</a></nav>
+            <div class="site-nav-cta">
+                <div class="nav-icos"><a href="/tasq-yellow-paper.pdf" class="nav-docs" aria-label="Yellow paper"
+                        target="_blank" rel="noreferrer"><svg width="19" height="19" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
+                            <path d="M7 3h7l5 5v13H7zM14 3v5h5"></path>
+                        </svg></a><a href="https://github.com/tasqProject" class="nav-social" aria-label="GitHub"
+                        target="_blank" rel="noreferrer"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
+                            <path
+                                d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21">
+                            </path>
+                        </svg></a><a href="https://x.com/tasq_x" class="nav-social" aria-label="X" target="_blank"
+                        rel="noreferrer"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"
+                            aria-hidden="true">
+                            <path
+                                d="M17.8 3h3.1l-6.8 7.7L22 21h-6.2l-4.9-6.3L5.3 21H2.2l7.2-8.3L1.8 3h6.4l4.4 5.8L17.8 3zm-1.1 16.2h1.7L7.4 4.7H5.6l11.1 14.5z">
+                            </path>
+                        </svg></a></div><a class="btn btn-primary nav-launch" href="/app">Launch app</a><button
+                    class="btn btn-ghost menu-btn" aria-label="Menu" aria-expanded="false"><svg width="18" height="18"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <path d="M4 7h16M4 12h16M4 17h16"></path>
+                    </svg></button>
+            </div>
+        </div>
+        <div class="mobile-menu"><a href="/#product">Product</a><a href="/#how">How it works</a><a
+                href="/token">$TasQ</a><a href="/benchmark">Benchmarks</a><a href="/faq">FAQ</a><a
+                class="btn btn-primary mobile-launch launch-block" href="/app">Launch app</a>
+            <div class="mobile-social"><a href="/tasq-yellow-paper.pdf" target="_blank" rel="noreferrer"
+                    aria-label="Yellow paper"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"
+                        aria-hidden="true">
+                        <path d="M7 3h7l5 5v13H7zM14 3v5h5"></path>
+                    </svg></a><a href="https://github.com/tasqProject" target="_blank" rel="noreferrer"
+                    aria-label="GitHub"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"
+                        aria-hidden="true">
+                        <path
+                            d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21">
+                        </path>
+                    </svg></a><a href="https://x.com/tasq_x" target="_blank" rel="noreferrer" aria-label="X"><svg
+                        width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path
+                            d="M17.8 3h3.1l-6.8 7.7L22 21h-6.2l-4.9-6.3L5.3 21H2.2l7.2-8.3L1.8 3h6.4l4.4 5.8L17.8 3zm-1.1 16.2h1.7L7.4 4.7H5.6l11.1 14.5z">
+                        </path>
+                    </svg></a></div>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-card">
+                <div class="hero-scene " aria-hidden="true"><canvas></canvas>
+                    <div class="hero-scene-scrim"></div>
+                </div>
+                <div class="hero-card-dim" aria-hidden="true"></div>
+                <div class="container hero-inner"><span class="rh-badge"><span class="rh-logo"
+                            aria-hidden="true"></span>Powered by Robinhood Chain</span>
+                    <h1 class="h-display">Your AI,<br /><span class="hero-gradient-text">your data.</span></h1>
+                    <p class="lead hero-lead">GPU compute where the machine owner never sees what you run. You only pay
+                        for results you can verify.</p>
+                    <div class="hero-actions"><a class="btn btn-primary btn-lg" href="/app">Launch app<svg width="16"
+                                height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M5 12h14M13 6l6 6-6 6"></path>
+                            </svg></a><a href="/tasq-yellow-paper.pdf" target="_blank" rel="noreferrer"
+                            class="btn btn-ghost btn-lg">Read Yellow Paper</a></div>
+                </div>
+            </div>
+            <div class="reveal visual hero-visual" style="transition-delay:120ms">
+                <div class="visual-bar"><i></i><i></i><i></i><span class="addr">tasqnetwork.io/app/market</span></div>
+                <div class="visual-body">
+                    <div class="visual-side" aria-hidden="true"><span class=""><svg width="15" height="15"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M4 11 12 4l8 7v9h-5v-6H9v6H4z"></path>
+                            </svg>Overview</span><span class="on"><svg width="15" height="15" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true">
+                                <path d="M4 5h16M4 12h16M4 19h16M8 5v14"></path>
+                            </svg>Market</span><span class=""><svg width="15" height="15" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true">
+                                <path d="M6 11h12v10H6zM8.5 11V8a3.5 3.5 0 0 1 7 0v3"></path>
+                            </svg>Rent</span><span class=""><svg width="15" height="15" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"
+                                aria-hidden="true">
+                                <path d="M4 4h16v6H4zM4 14h16v6H4zM8 7h.01M8 17h.01"></path>
+                            </svg>Lend</span><span class=""><svg width="15" height="15" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"
+                                aria-hidden="true">
+                                <path d="M5 4v16M10 4v16M15 4v16M20 4v16"></path>
+                            </svg>Workloads</span><span class=""><svg width="15" height="15" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true">
+                                <path d="M12 3 4.5 6v6c0 4.4 3.2 7.9 7.5 9 4.3-1.1 7.5-4.6 7.5-9V6L12 3zM9 12l2 2 4-4">
+                                </path>
+                            </svg>Verify</span></div>
+                    <div class="visual-main">
+                        <div class="row-between">
+                            <div class="h4">Market</div><span class="vcount mono">4<!-- --> offers</span>
+                        </div>
+                        <div class="vrow head" aria-hidden="true">
+                            <span>GPU</span><span>Modes</span><span>Region</span><span>Rep.</span><span
+                                style="text-align:right">Per hour</span></div>
+                        <div class="vrow item"><span style="font-weight:500">H100 80GB</span><span class="row"
+                                style="gap:4px"><span class="chip-mode A">A</span><span
+                                    class="chip-mode R">R</span></span><span class="muted">Europe</span><span
+                                class="mono muted">0.982</span><span class="mono" style="text-align:right">$2.48</span>
+                        </div>
+                        <div class="vrow item sel"><span style="font-weight:500">H200 141GB</span><span class="row"
+                                style="gap:4px"><span class="chip-mode A">A</span><span
+                                    class="chip-mode R">R</span><span class="chip-mode P">P</span></span><span
+                                class="muted">North America</span><span class="mono muted">0.967</span><span
+                                class="mono" style="text-align:right">$3.31</span></div>
+                        <div class="vrow item"><span style="font-weight:500">L40S 48GB</span><span class="row"
+                                style="gap:4px"><span class="chip-mode R">R</span></span><span class="muted">Asia
+                                Pacific</span><span class="mono muted">0.941</span><span class="mono"
+                                style="text-align:right">$0.91</span></div>
+                        <div class="vrow item"><span style="font-weight:500">RTX 5090 32GB</span><span class="row"
+                                style="gap:4px"><span class="chip-mode R">R</span><span
+                                    class="chip-mode P">P</span></span><span class="muted">Europe</span><span
+                                class="mono muted">0.958</span><span class="mono" style="text-align:right">$0.66</span>
+                        </div>
+                    </div>
+                    <div class="visual-aside">
+                        <div class="row-between">
+                            <div class="h4">Rent privately</div><span class="chip-mode A">A</span>
+                        </div>
+                        <div>
+                            <div class="vkv"><span class="muted">GPU</span><span>H200 141GB</span></div>
+                            <div class="vkv"><span class="muted">Enclave</span><span>NVIDIA CC + TDX</span></div>
+                            <div class="vkv"><span class="muted">Key exchange</span><span>X25519 + ML-KEM</span></div>
+                            <div class="vkv"><span class="muted">Duration</span><span>8 h</span></div>
+                            <div class="vkv"><span class="muted">Estimate</span><span class="mono">$27.80</span></div>
+                        </div>
+                        <div class="btn btn-brand btn-block" style="height:40px"><svg width="15" height="15"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M15 9a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM12 12v9M12 16h3M12 19h2"></path>
+                            </svg>Sign intent</div>
+                        <p class="tiny faint">Inputs stay encrypted until the enclave proves its code.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="product">
+            <div class="container">
+                <div class="reveal section-head" style="transition-delay:0ms">
+                    <p class="eyebrow">The app</p>
+                    <h2 class="h1">Five ways to use private compute</h2>
+                    <p class="lead">Sign in with a wallet through Privy on Robinhood Chain. Every action produces a
+                        signed intent you can inspect.</p>
+                </div>
+                <div class="grid g3">
+                    <div class="reveal tile wide" style="transition-delay:0ms"><a class="row-between stretch"
+                            href="/app/market">
+                            <div class="row" style="gap:14px"><span class="icon"><svg width="20" height="20"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M4 5h16M4 12h16M4 19h16M8 5v14"></path>
+                                    </svg></span><span class="h3">Market</span></div>
+                        </a>
+                        <p class="muted">Every GPU offer in one place, with the assurance modes it supports, attestation
+                            type, region, reputation and live price.</p>
+                        <div style="margin-top:auto;display:grid;gap:6px">
+                            <div class="row-between"
+                                style="padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:rgba(255,255,255,0.02);font-size:13px">
+                                <span>H100 80GB</span><span class="row" style="gap:4px"><span
+                                        class="chip-mode A">A</span><span class="chip-mode R">R</span></span><span
+                                    class="mono">$2.48</span></div>
+                            <div class="row-between"
+                                style="padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:rgba(255,255,255,0.02);font-size:13px">
+                                <span>A100 80GB</span><span class="row" style="gap:4px"><span
+                                        class="chip-mode R">R</span><span class="chip-mode P">P</span></span><span
+                                    class="mono">$1.41</span></div>
+                            <div class="row-between"
+                                style="padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:rgba(255,255,255,0.02);font-size:13px">
+                                <span>RTX 4090 24GB</span><span class="row" style="gap:4px"><span
+                                        class="chip-mode R">R</span></span><span class="mono">$0.43</span></div>
+                        </div>
+                    </div>
+                    <div class="reveal tile" style="transition-delay:60ms"><a class="row-between stretch"
+                            href="/app/rent">
+                            <div class="row" style="gap:14px"><span class="icon"><svg width="20" height="20"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M6 11h12v10H6zM8.5 11V8a3.5 3.5 0 0 1 7 0v3"></path>
+                                    </svg></span><span class="h3">Rent privately</span></div>
+                        </a>
+                        <p class="muted">Choose a GPU, set hours and a price ceiling. Mark the job confidential and it
+                            can only run inside an attested enclave.</p>
+                        <div class="tile-foot"><span>Mode A, R or P</span><svg width="16" height="16"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M7 17 17 7M8 7h9v9"></path>
+                            </svg></div>
+                    </div>
+                    <div class="reveal tile" style="transition-delay:0ms"><a class="row-between stretch"
+                            href="/app/lend">
+                            <div class="row" style="gap:14px"><span class="icon"><svg width="20" height="20"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M4 4h16v6H4zM4 14h16v6H4zM8 7h.01M8 17h.01"></path>
+                                    </svg></span><span class="h3">Lend your GPU</span></div>
+                        </a>
+                        <p class="muted">Register hardware, see which modes it qualifies for, and derive the ledger ID
+                            that ties your key to your machine.</p>
+                        <div class="tile-foot"><span>Earn per verified unit</span><svg width="16" height="16"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M7 17 17 7M8 7h9v9"></path>
+                            </svg></div>
+                    </div>
+                    <div class="reveal tile wide" style="transition-delay:60ms"><a class="row-between stretch"
+                            href="/app/workloads">
+                            <div class="row" style="gap:14px"><span class="icon"><svg width="20" height="20"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M5 4v16M10 4v16M15 4v16M20 4v16"></path>
+                                    </svg></span><span class="h3">Parallel workloads</span></div>
+                        </a>
+                        <p class="muted">Split a job into units that run across many machines at once. The admission
+                            check tells you if your audit rate is high enough for what the result is worth.</p>
+                        <div style="margin-top:auto;display:grid;grid-template-columns:repeat(18, 1fr);gap:4px;align-items:end;height:64px"
+                            aria-hidden="true">
+                            <div
+                                style="height:100%;border-radius:4px;background:rgba(255,255,255,0.05);position:relative;overflow:hidden">
+                                <div
+                                    style="position:absolute;left:0;right:0;bottom:0;height:100%;background:var(--brand)">
+                                </div>
+                            </div>
+                            <div
+                                style="height:100%;border-radius:4px;background:rgba(255,255,255,0.05);position:relative;overflow:hidden">
+                                <div
+                                    style="position:absolute;left:0;right:0;bottom:0;height:100%;background:var(--brand)">
+                                </div>
+                            </div>
+                            <div
+                                style="height:100%;border-radius:4px;background:rgba(255,255,255,0.05);position:relative;overflow:hidden">
+                                <div
+                                    style="position:absolute;left:0;right:0;bottom:0;height:100%;background:var(--brand)">
+                                </div>
+                            </div>
+                            <div
+                                style="height:100%;border-radius:4px;background:rgba(255,255,255,0.05);position:relative;overflow:hidden">
+                                <div
+                                    style="position:absolute;left:0;right:0;bottom:0;height:100%;background:var(--brand)">
+                                </div>
+                            </div>
+                            <div
+                                style="height:100%;border-radius:4px;background:rgba(255,255,255,0.05);position:relative;overflow:hidden">
+                                <div
+                                    style="position:absolute;left:0;right:0;bottom:0;height:80%;background:rgba(139,77,255,0.45)">
+                                </div>
+                            </div>
+                            <div
+                                style="height:100%;border-radius:4px;background:rgba(255,255,255,0.05);position:relative;overflow:hidden">
+                                <div
+                                    style="position:absolute;left:0;right:0;bottom:0;height:100%;background:var(--brand)">
+                                </div>
+                            </div>
+                            <div
+                                style="height:100%;border-radius:4px;background:rgba(255,255,255,0.05);position:relative;overflow:hidden">
+                                <div
+                                    style="position:absolute;left:0;right:0;bottom:0;height:60%;background:rgba(139,77,255,0.45)">
+                                </div>
+                            </div>
+                            <div
+                                style="height:100%;border-radius:4px;background:rgba(255,255,255,0.05);position:relative;overflow:hidden">
+                                <div
+                                    style="position:absolute;left:0;right:0;bottom:0;height:100%;background:var(--brand)">
+                                </div>
+                            </div>
+                            <div
+                                style="height:100%;border-radius:4px;background:rgba(255,255,255,0.05);position:relative;overflow:hidden">
+                                <div
+                                    style="position:absolute;left:0;right:0;bottom:0;height:40%;background:rgba(139,77,255,0.45)">
+                                </div>
+                            </div>
+                            <div
+                                style="height:100%;border-radius:4px;background:rgba(255,255,255,0.05);position:relative;overflow:hidden">
+                                <div
+                                    style="position:absolute;left:0;right:0;bottom:0;height:90%;background:rgba(139,77,255,0.45)">
+                                </div>
+                            </div>
+                            <div
+                                style="height:100%;border-radius:4px;background:rgba(255,255,255,0.05);position:relative;overflow:hidden">
+                                <div
+                                    style="position:absolute;left:0;right:0;bottom:0;height:30%;background:rgba(139,77,255,0.45)">
+                                </div>
+                            </div>
+                            <div
+                                style="height:100%;border-radius:4px;background:rgba(255,255,255,0.05);position:relative;overflow:hidden">
+                                <div
+                                    style="position:absolute;left:0;right:0;bottom:0;height:70%;background:rgba(139,77,255,0.45)">
+                                </div>
+                            </div>
+                            <div
+                                style="height:100%;border-radius:4px;background:rgba(255,255,255,0.05);position:relative;overflow:hidden">
+                                <div
+                                    style="position:absolute;left:0;right:0;bottom:0;height:20%;background:rgba(139,77,255,0.45)">
+                                </div>
+                            </div>
+                            <div
+                                style="height:100%;border-radius:4px;background:rgba(255,255,255,0.05);position:relative;overflow:hidden">
+                                <div
+                                    style="position:absolute;left:0;right:0;bottom:0;height:50%;background:rgba(139,77,255,0.45)">
+                                </div>
+                            </div>
+                            <div
+                                style="height:100%;border-radius:4px;background:rgba(255,255,255,0.05);position:relative;overflow:hidden">
+                                <div
+                                    style="position:absolute;left:0;right:0;bottom:0;height:10%;background:rgba(139,77,255,0.45)">
+                                </div>
+                            </div>
+                            <div
+                                style="height:100%;border-radius:4px;background:rgba(255,255,255,0.05);position:relative;overflow:hidden">
+                                <div
+                                    style="position:absolute;left:0;right:0;bottom:0;height:0%;background:rgba(139,77,255,0.45)">
+                                </div>
+                            </div>
+                            <div
+                                style="height:100%;border-radius:4px;background:rgba(255,255,255,0.05);position:relative;overflow:hidden">
+                                <div
+                                    style="position:absolute;left:0;right:0;bottom:0;height:0%;background:rgba(139,77,255,0.45)">
+                                </div>
+                            </div>
+                            <div
+                                style="height:100%;border-radius:4px;background:rgba(255,255,255,0.05);position:relative;overflow:hidden">
+                                <div
+                                    style="position:absolute;left:0;right:0;bottom:0;height:0%;background:rgba(139,77,255,0.45)">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reveal tile wide" style="transition-delay:0ms"><a class="row-between stretch"
+                            href="/app/verify">
+                            <div class="row" style="gap:14px"><span class="icon"><svg width="20" height="20"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path
+                                            d="M12 3 4.5 6v6c0 4.4 3.2 7.9 7.5 9 4.3-1.1 7.5-4.6 7.5-9V6L12 3zM9 12l2 2 4-4">
+                                        </path>
+                                    </svg></span><span class="h3">Verify results</span></div>
+                        </a>
+                        <p class="muted">Hash an output file, check a Merkle inclusion proof, or recover the signer of a
+                            receipt. It all runs in your browser.</p>
+                        <div style="margin-top:auto;display:grid;gap:8px">
+                            <div class="hash" style="font-size:11.5px"><span class="faint">expected
+                                </span>0x7c1e9a52d4b0f3e6a8c2d19b5f0e74a3c6d8b21e9f4a07c35d6e8b1f2a9c4d07</div>
+                            <div class="hash" style="font-size:11.5px"><span class="faint">computed
+                                </span>0x7c1e9a52d4b0f3e6a8c2d19b5f0e74a3c6d8b21e9f4a07c35d6e8b1f2a9c4d07</div>
+                            <div class="row" style="gap:8px;color:var(--ok);font-size:13px"><svg width="16" height="16"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M5 12.5l4.5 4.5L19 7.5"></path>
+                                </svg>Match. Computed locally with BLAKE3.</div>
+                        </div>
+                    </div>
+                    <div class="reveal tile"
+                        style="transition-delay:60ms;background:linear-gradient(180deg, rgba(139,77,255,0.12), var(--panel) 70%);border-color:var(--brand-line)">
+                        <a href="/tasq-yellow-paper.pdf" class="row-between stretch">
+                            <div class="row" style="gap:14px"><span class="icon"><svg width="20" height="20"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M7 3h7l5 5v13H7zM14 3v5h5"></path>
+                                    </svg></span><span class="h3">How it works, in full</span></div>
+                        </a>
+                        <p class="muted">The yellow paper covers the threat model, the admission rule, scheduling,
+                            reputation and what we have not solved yet.</p>
+                        <div class="tile-foot"><span>23 pages</span><svg width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true">
+                                <path d="M7 17 17 7M8 7h9v9"></path>
+                            </svg></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="section-divider" aria-hidden="true"></div>
+        <section class="section video-section" id="in-action">
+            <div class="container">
+                <div class="reveal section-head video-head" style="transition-delay:0ms">
+                    <p class="eyebrow">In action</p>
+                    <h2 class="h1">See a job run, end to end</h2>
+                    <p class="lead">Submit an encrypted job, watch it attest, run and return a result you can verify. No
+                        raw data ever leaves your control.</p>
+                </div>
+                <div class="reveal video-wrap" style="transition-delay:0ms">
+                    <div class="video-glow" aria-hidden="true"></div><video class="video-el"
+                        src="./explainer-16x9.mp4" loop=""
+                        playsInline="" preload="metadata"></video>
+                    <div class="video-controls"><button type="button" class="vctl" aria-label="Pause"><svg width="15"
+                                height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M7 5h3v14H7zM14 5h3v14h-3z"></path>
+                            </svg></button><button type="button" class="vctl" aria-label="Mute"><svg width="15"
+                                height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M11 5 6 9H2v6h4l5 4V5zM15.5 8.5a5 5 0 0 1 0 7M19 5a9 9 0 0 1 0 14"></path>
+                            </svg></button></div>
+                </div>
+            </div>
+        </section>
+        <div class="section-divider" aria-hidden="true"></div>
+        <section class="section" id="modes" style="padding-top:40px">
+            <div class="container">
+                <div class="reveal section-head" style="transition-delay:0ms">
+                    <p class="eyebrow">Assurance modes</p>
+                    <h2 class="h1">Choose how much you trust the machine</h2>
+                    <p class="lead">Different jobs need different guarantees. Every offer in the market says which modes
+                        it supports, and every price shows what each guarantee costs.</p>
+                </div>
+                <div class="grid g3">
+                    <div class="reveal mode-card featured" style="transition-delay:0ms">
+                        <div class="mode-banner mb-a" aria-hidden="true"><svg viewBox="0 0 320 128"
+                                preserveAspectRatio="xMidYMid slice" class="mb-svg">
+                                <g class="mb-grid" fill="currentColor">
+                                    <circle cx="24" cy="26" r="1"></circle>
+                                    <circle cx="58" cy="26" r="1"></circle>
+                                    <circle cx="92" cy="26" r="1"></circle>
+                                    <circle cx="126" cy="26" r="1"></circle>
+                                    <circle cx="160" cy="26" r="1"></circle>
+                                    <circle cx="194" cy="26" r="1"></circle>
+                                    <circle cx="228" cy="26" r="1"></circle>
+                                    <circle cx="262" cy="26" r="1"></circle>
+                                    <circle cx="296" cy="26" r="1"></circle>
+                                    <circle cx="24" cy="51" r="1"></circle>
+                                    <circle cx="58" cy="51" r="1"></circle>
+                                    <circle cx="92" cy="51" r="1"></circle>
+                                    <circle cx="126" cy="51" r="1"></circle>
+                                    <circle cx="160" cy="51" r="1"></circle>
+                                    <circle cx="194" cy="51" r="1"></circle>
+                                    <circle cx="228" cy="51" r="1"></circle>
+                                    <circle cx="262" cy="51" r="1"></circle>
+                                    <circle cx="296" cy="51" r="1"></circle>
+                                    <circle cx="24" cy="76" r="1"></circle>
+                                    <circle cx="58" cy="76" r="1"></circle>
+                                    <circle cx="92" cy="76" r="1"></circle>
+                                    <circle cx="126" cy="76" r="1"></circle>
+                                    <circle cx="160" cy="76" r="1"></circle>
+                                    <circle cx="194" cy="76" r="1"></circle>
+                                    <circle cx="228" cy="76" r="1"></circle>
+                                    <circle cx="262" cy="76" r="1"></circle>
+                                    <circle cx="296" cy="76" r="1"></circle>
+                                    <circle cx="24" cy="101" r="1"></circle>
+                                    <circle cx="58" cy="101" r="1"></circle>
+                                    <circle cx="92" cy="101" r="1"></circle>
+                                    <circle cx="126" cy="101" r="1"></circle>
+                                    <circle cx="160" cy="101" r="1"></circle>
+                                    <circle cx="194" cy="101" r="1"></circle>
+                                    <circle cx="228" cy="101" r="1"></circle>
+                                    <circle cx="262" cy="101" r="1"></circle>
+                                    <circle cx="296" cy="101" r="1"></circle>
+                                </g>
+                                <g>
+                                    <line x1="18" y1="64" x2="302" y2="64" class="mb-flow" stroke-dasharray="2 10">
+                                    </line>
+                                    <circle cx="160" cy="64" r="31" class="mb-breathe"></circle>
+                                    <circle cx="160" cy="64" r="21" class="mb-core-ring"></circle>
+                                    <rect x="150" y="63" width="20" height="14" rx="2.5" class="mb-lockbody"></rect>
+                                    <path d="M154 63v-4a6 6 0 0 1 12 0v4" class="mb-lockshackle"></path>
+                                </g>
+                            </svg></div>
+                        <div class="mode-head">
+                            <div class="mode-title">Attested</div><span class="badge badge-brand mode-head-badge">Use
+                                for private data</span>
+                        </div>
+                        <dl class="kv">
+                            <div>
+                                <dt>Privacy</dt>
+                                <dd>Inputs, weights and outputs are decrypted only inside the enclave.</dd>
+                            </div>
+                            <div>
+                                <dt>Integrity</dt>
+                                <dd>The enclave proves the exact runtime image before keys are released.</dd>
+                            </div>
+                            <div>
+                                <dt>Best for</dt>
+                                <dd>Confidential inference and fine-tuning.</dd>
+                            </div>
+                            <div>
+                                <dt>Cost</dt>
+                                <dd>About 5% over attested GPU time.</dd>
+                            </div>
+                        </dl>
+                    </div>
+                    <div class="reveal mode-card" style="transition-delay:60ms">
+                        <div class="mode-banner mb-r" aria-hidden="true"><svg viewBox="0 0 320 128"
+                                preserveAspectRatio="xMidYMid slice" class="mb-svg">
+                                <g class="mb-grid" fill="currentColor">
+                                    <circle cx="24" cy="26" r="1"></circle>
+                                    <circle cx="58" cy="26" r="1"></circle>
+                                    <circle cx="92" cy="26" r="1"></circle>
+                                    <circle cx="126" cy="26" r="1"></circle>
+                                    <circle cx="160" cy="26" r="1"></circle>
+                                    <circle cx="194" cy="26" r="1"></circle>
+                                    <circle cx="228" cy="26" r="1"></circle>
+                                    <circle cx="262" cy="26" r="1"></circle>
+                                    <circle cx="296" cy="26" r="1"></circle>
+                                    <circle cx="24" cy="51" r="1"></circle>
+                                    <circle cx="58" cy="51" r="1"></circle>
+                                    <circle cx="92" cy="51" r="1"></circle>
+                                    <circle cx="126" cy="51" r="1"></circle>
+                                    <circle cx="160" cy="51" r="1"></circle>
+                                    <circle cx="194" cy="51" r="1"></circle>
+                                    <circle cx="228" cy="51" r="1"></circle>
+                                    <circle cx="262" cy="51" r="1"></circle>
+                                    <circle cx="296" cy="51" r="1"></circle>
+                                    <circle cx="24" cy="76" r="1"></circle>
+                                    <circle cx="58" cy="76" r="1"></circle>
+                                    <circle cx="92" cy="76" r="1"></circle>
+                                    <circle cx="126" cy="76" r="1"></circle>
+                                    <circle cx="160" cy="76" r="1"></circle>
+                                    <circle cx="194" cy="76" r="1"></circle>
+                                    <circle cx="228" cy="76" r="1"></circle>
+                                    <circle cx="262" cy="76" r="1"></circle>
+                                    <circle cx="296" cy="76" r="1"></circle>
+                                    <circle cx="24" cy="101" r="1"></circle>
+                                    <circle cx="58" cy="101" r="1"></circle>
+                                    <circle cx="92" cy="101" r="1"></circle>
+                                    <circle cx="126" cy="101" r="1"></circle>
+                                    <circle cx="160" cy="101" r="1"></circle>
+                                    <circle cx="194" cy="101" r="1"></circle>
+                                    <circle cx="228" cy="101" r="1"></circle>
+                                    <circle cx="262" cy="101" r="1"></circle>
+                                    <circle cx="296" cy="101" r="1"></circle>
+                                </g>
+                                <g>
+                                    <line x1="96" y1="64" x2="224" y2="64" class="mb-edge"></line>
+                                    <g class="mb-rnode mb-rn0">
+                                        <circle cx="96" cy="64" r="15" class="mb-rnode-halo"></circle>
+                                        <circle cx="96" cy="64" r="8" class="mb-rnode-core"></circle>
+                                    </g>
+                                    <g class="mb-rnode mb-rn1">
+                                        <circle cx="160" cy="64" r="15" class="mb-rnode-halo"></circle>
+                                        <circle cx="160" cy="64" r="8" class="mb-rnode-core"></circle>
+                                    </g>
+                                    <g class="mb-rnode mb-rn2">
+                                        <circle cx="224" cy="64" r="15" class="mb-rnode-halo"></circle>
+                                        <circle cx="224" cy="64" r="8" class="mb-rnode-core"></circle>
+                                    </g>
+                                    <circle cx="96" cy="64" r="3.2" class="mb-signal"></circle>
+                                </g>
+                            </svg></div>
+                        <div class="mode-head">
+                            <div class="mode-title">Redundant</div>
+                        </div>
+                        <dl class="kv">
+                            <div>
+                                <dt>Privacy</dt>
+                                <dd>Not confidential. The machines see the input.</dd>
+                            </div>
+                            <div>
+                                <dt>Integrity</dt>
+                                <dd>q of r independent machines must agree, with hidden audits run in mode A.</dd>
+                            </div>
+                            <div>
+                                <dt>Best for</dt>
+                                <dd>Batch inference, embeddings and data jobs on non-sensitive data.</dd>
+                            </div>
+                            <div>
+                                <dt>Cost</dt>
+                                <dd>r seats, plus the audit rate.</dd>
+                            </div>
+                        </dl>
+                    </div>
+                    <div class="reveal mode-card" style="transition-delay:120ms">
+                        <div class="mode-banner mb-p" aria-hidden="true"><svg viewBox="0 0 320 128"
+                                preserveAspectRatio="xMidYMid slice" class="mb-svg">
+                                <g class="mb-grid" fill="currentColor">
+                                    <circle cx="24" cy="26" r="1"></circle>
+                                    <circle cx="58" cy="26" r="1"></circle>
+                                    <circle cx="92" cy="26" r="1"></circle>
+                                    <circle cx="126" cy="26" r="1"></circle>
+                                    <circle cx="160" cy="26" r="1"></circle>
+                                    <circle cx="194" cy="26" r="1"></circle>
+                                    <circle cx="228" cy="26" r="1"></circle>
+                                    <circle cx="262" cy="26" r="1"></circle>
+                                    <circle cx="296" cy="26" r="1"></circle>
+                                    <circle cx="24" cy="51" r="1"></circle>
+                                    <circle cx="58" cy="51" r="1"></circle>
+                                    <circle cx="92" cy="51" r="1"></circle>
+                                    <circle cx="126" cy="51" r="1"></circle>
+                                    <circle cx="160" cy="51" r="1"></circle>
+                                    <circle cx="194" cy="51" r="1"></circle>
+                                    <circle cx="228" cy="51" r="1"></circle>
+                                    <circle cx="262" cy="51" r="1"></circle>
+                                    <circle cx="296" cy="51" r="1"></circle>
+                                    <circle cx="24" cy="76" r="1"></circle>
+                                    <circle cx="58" cy="76" r="1"></circle>
+                                    <circle cx="92" cy="76" r="1"></circle>
+                                    <circle cx="126" cy="76" r="1"></circle>
+                                    <circle cx="160" cy="76" r="1"></circle>
+                                    <circle cx="194" cy="76" r="1"></circle>
+                                    <circle cx="228" cy="76" r="1"></circle>
+                                    <circle cx="262" cy="76" r="1"></circle>
+                                    <circle cx="296" cy="76" r="1"></circle>
+                                    <circle cx="24" cy="101" r="1"></circle>
+                                    <circle cx="58" cy="101" r="1"></circle>
+                                    <circle cx="92" cy="101" r="1"></circle>
+                                    <circle cx="126" cy="101" r="1"></circle>
+                                    <circle cx="160" cy="101" r="1"></circle>
+                                    <circle cx="194" cy="101" r="1"></circle>
+                                    <circle cx="228" cy="101" r="1"></circle>
+                                    <circle cx="262" cy="101" r="1"></circle>
+                                    <circle cx="296" cy="101" r="1"></circle>
+                                </g>
+                                <g>
+                                    <circle cx="118" cy="40" r="3" class="mb-commit mb-c0"></circle>
+                                    <circle cx="118" cy="64" r="3" class="mb-commit mb-c1"></circle>
+                                    <circle cx="118" cy="88" r="3" class="mb-commit mb-c2"></circle>
+                                    <path d="M124 40h24M124 64h24M124 88h24" class="mb-commit-line"></path>
+                                    <circle cx="206" cy="64" r="26" class="mb-proof-ring"></circle>
+                                    <path d="M194 65l8 9 17 -20" class="mb-proof-check"></path>
+                                </g>
+                            </svg></div>
+                        <div class="mode-head">
+                            <div class="mode-title">Proven</div>
+                        </div>
+                        <dl class="kv">
+                            <div>
+                                <dt>Privacy</dt>
+                                <dd>The verifier sees only commitments. The prover still sees the input.</dd>
+                            </div>
+                            <div>
+                                <dt>Integrity</dt>
+                                <dd>A zk-STARK proof that you check against the input commitment.</dd>
+                            </div>
+                            <div>
+                                <dt>Best for</dt>
+                                <dd>Small models and deterministic jobs.</dd>
+                            </div>
+                            <div>
+                                <dt>Cost</dt>
+                                <dd>Proving is quoted per job.</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="section-divider" aria-hidden="true"></div>
+        <section class="section" id="how" style="padding-top:40px">
+            <div class="container">
+                <div class="reveal section-head" style="transition-delay:0ms">
+                    <p class="eyebrow">How a job runs</p>
+                    <h2 class="h1">Four steps, each one checkable</h2>
+                </div>
+                <div class="reveal steps" style="transition-delay:0ms">
+                    <div class="step"><span class="step-n">0<!-- -->1</span>
+                        <div class="h3">Sign an intent</div>
+                        <p class="muted small" style="line-height:1.65">Describe the job, the assurance mode and a price
+                            ceiling, then sign it with your wallet. Inputs are committed by hash. They are not uploaded
+                            to us.</p>
+                    </div>
+                    <div class="step"><span class="step-n">0<!-- -->2</span>
+                        <div class="h3">Match and attest</div>
+                        <p class="muted small" style="line-height:1.65">The scheduler picks machines by reputation,
+                            price and latency. In mode A the enclave proves which code it runs before any key is
+                            released to it.</p>
+                    </div>
+                    <div class="step"><span class="step-n">0<!-- -->3</span>
+                        <div class="h3">Run</div>
+                        <p class="muted small" style="line-height:1.65">Transport uses TLS 1.3 with hybrid X25519 and
+                            ML-KEM-768 key exchange. Data is decrypted only inside the enclave, or sent to independent
+                            seats in mode R.</p>
+                    </div>
+                    <div class="step"><span class="step-n">0<!-- -->4</span>
+                        <div class="h3">Verify, then settle</div>
+                        <p class="muted small" style="line-height:1.65">Results return with a signed receipt and a
+                            BLAKE3 commitment that you check in the browser. Payment releases after verification, not
+                            before.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-sm">
+            <div class="container">
+                <div class="reveal quote" style="transition-delay:0ms"><svg width="22" height="22" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true" style="color:var(--brand-2)">
+                        <path d="M6 11h12v10H6zM8.5 11V8a3.5 3.5 0 0 1 7 0v3"></path>
+                    </svg>
+                    <blockquote>The person who owns the GPU should be able to earn from it without ever learning what
+                        ran on it.</blockquote>
+                    <p class="muted small">The design goal behind TasQ</p>
+                </div>
+            </div>
+        </section>
+        <div class="section-divider" aria-hidden="true"></div>
+        <section class="section" id="evidence" style="padding-top:40px">
+            <div class="container">
+                <div class="reveal section-head" style="transition-delay:0ms">
+                    <p class="eyebrow">Evidence</p>
+                    <h2 class="h1">Numbers, with the data behind them</h2>
+                    <p class="lead">Each number links to the script and the raw data behind it.</p>
+                </div>
+                <div class="grid g4">
+                    <div class="reveal " style="transition-delay:0ms"><a class="stat card-hover" style="height:100%"
+                            href="/benchmark/crypto"><span class="stat-v">0.22 ms</span><span class="stat-l">Hybrid
+                                X25519 and ML-KEM-768 key agreement, one side.</span><span class="stat-src"
+                                style="margin-top:auto;padding-top:8px;justify-content:flex-end"><svg width="15"
+                                    height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M7 17 17 7M8 7h9v9"></path>
+                                </svg></span></a></div>
+                    <div class="reveal " style="transition-delay:50ms"><a class="stat card-hover" style="height:100%"
+                            href="/benchmark/crypto"><span class="stat-v">60 ms</span><span class="stat-l">Merkle root
+                                over 65,536 output chunks with BLAKE3.</span><span class="stat-src"
+                                style="margin-top:auto;padding-top:8px;justify-content:flex-end"><svg width="15"
+                                    height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M7 17 17 7M8 7h9v9"></path>
+                                </svg></span></a></div>
+                    <div class="reveal " style="transition-delay:100ms"><a class="stat card-hover" style="height:100%"
+                            href="/benchmark/quorum"><span class="stat-v">0.0012</span><span class="stat-l">Largest gap
+                                between the quorum capture formula and 400,000 draws.</span><span class="stat-src"
+                                style="margin-top:auto;padding-top:8px;justify-content:flex-end"><svg width="15"
+                                    height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M7 17 17 7M8 7h9v9"></path>
+                                </svg></span></a></div>
+                    <div class="reveal " style="transition-delay:150ms"><a class="stat card-hover" style="height:100%"
+                            href="/benchmark/quorum"><span class="stat-v">Within 5%</span><span class="stat-l">Attack
+                                break-even versus the admission rule, at every audit rate tested.</span><span
+                                class="stat-src" style="margin-top:auto;padding-top:8px;justify-content:flex-end"><svg
+                                    width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"
+                                    aria-hidden="true">
+                                    <path d="M7 17 17 7M8 7h9v9"></path>
+                                </svg></span></a></div>
+                    <div class="reveal " style="transition-delay:0ms"><a class="stat card-hover" style="height:100%"
+                            href="/benchmark/scheduler"><span class="stat-v">0.1%</span><span class="stat-l">Wrong
+                                results accepted late in a run, down from 1 to 2% at the start.</span><span
+                                class="stat-src" style="margin-top:auto;padding-top:8px;justify-content:flex-end"><svg
+                                    width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"
+                                    aria-hidden="true">
+                                    <path d="M7 17 17 7M8 7h9v9"></path>
+                                </svg></span></a></div>
+                    <div class="reveal " style="transition-delay:50ms"><a class="stat card-hover" style="height:100%"
+                            href="/benchmark/scheduler"><span class="stat-v">67 to 87%</span><span
+                                class="stat-l">Adversarial nodes paused by reputation within a single run.</span><span
+                                class="stat-src" style="margin-top:auto;padding-top:8px;justify-content:flex-end"><svg
+                                    width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"
+                                    aria-hidden="true">
+                                    <path d="M7 17 17 7M8 7h9v9"></path>
+                                </svg></span></a></div>
+                    <div class="reveal " style="transition-delay:100ms"><a class="stat card-hover" style="height:100%"
+                            href="/benchmark/reputation"><span class="stat-v">5%</span><span class="stat-l">Fault rate
+                                an honest node can have and never be excluded over 300 periods.</span><span
+                                class="stat-src" style="margin-top:auto;padding-top:8px;justify-content:flex-end"><svg
+                                    width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"
+                                    aria-hidden="true">
+                                    <path d="M7 17 17 7M8 7h9v9"></path>
+                                </svg></span></a></div>
+                    <div class="reveal " style="transition-delay:150ms"><a class="stat card-hover" style="height:100%"
+                            href="/benchmark/gpu-model"><span class="stat-v">About 3x</span><span
+                                class="stat-l">Attested price premium at which mode A stops being cheaper than three-way
+                                redundancy.</span><span class="stat-src"
+                                style="margin-top:auto;padding-top:8px;justify-content:flex-end"><svg width="15"
+                                    height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M7 17 17 7M8 7h9v9"></path>
+                                </svg></span></a></div>
+                </div>
+                <div style="margin-top:28px"><a class="arrow-link" href="/benchmark">All benchmarks and raw data <svg
+                            width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M5 12h14M13 6l6 6-6 6"></path>
+                        </svg></a></div>
+            </div>
+        </section>
+        <section class="section-sm cta-section">
+            <div class="container">
+                <div class="reveal cta-band" style="transition-delay:0ms"><canvas class="cta-canvas"
+                        aria-hidden="true"></canvas>
+                    <div class="cta-band-inner">
+                        <div class="stack" style="gap:12px;max-width:560px">
+                            <h2 class="h2">Start with a signed intent</h2>
+                            <p class="muted">Connect a wallet, price a confidential job and see exactly what would be
+                                sent before anything is.</p>
+                        </div>
+                        <div class="row wrap"><a class="btn btn-primary btn-lg" href="/app">Launch app<svg width="16"
+                                    height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M5 12h14M13 6l6 6-6 6"></path>
+                                </svg></a><a href="https://github.com/tasqProject" target="_blank" rel="noreferrer"
+                                class="btn btn-ghost btn-lg"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+                                    stroke-linejoin="round" aria-hidden="true">
+                                    <path
+                                        d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21">
+                                    </path>
+                                </svg>GitHub</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="stack" style="gap:16px"><a class="logo" aria-label="TasQ home" href="/"><img
+                            src="/logo-mark.png" alt="" width="32" height="32"
+                            style="width:32px;height:32px;border-radius:50%" /><span>TasQ</span></a>
+                    <p class="muted small" style="max-width:320px">A marketplace for AI compute where the person paying
+                        keeps control of their models and data.</p>
+                    <div class="row" style="gap:8px"><a class="btn btn-ghost btn-sm"
+                            href="https://github.com/tasqProject" target="_blank" rel="noreferrer"
+                            aria-label="GitHub"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"
+                                aria-hidden="true">
+                                <path
+                                    d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21">
+                                </path>
+                            </svg></a><a class="btn btn-ghost btn-sm" href="https://x.com/tasq_x" target="_blank"
+                            rel="noreferrer" aria-label="X"><svg width="14" height="14" viewBox="0 0 24 24"
+                                fill="currentColor" aria-hidden="true">
+                                <path
+                                    d="M17.8 3h3.1l-6.8 7.7L22 21h-6.2l-4.9-6.3L5.3 21H2.2l7.2-8.3L1.8 3h6.4l4.4 5.8L17.8 3zm-1.1 16.2h1.7L7.4 4.7H5.6l11.1 14.5z">
+                                </path>
+                            </svg></a></div>
+                </div>
+                <div>
+                    <h4>App</h4>
+                    <ul>
+                        <li><a href="/app/market">Market</a></li>
+                        <li><a href="/app/rent">Rent compute</a></li>
+                        <li><a href="/app/lend">Lend compute</a></li>
+                        <li><a href="/app/workloads">Parallel workloads</a></li>
+                        <li><a href="/app/verify">Verify results</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Research</h4>
+                    <ul>
+                        <li><a href="/tasq-yellow-paper.pdf">Yellow paper</a></li>
+                        <li><a href="/benchmark">Benchmarks</a></li>
+                        <li><a href="/benchmark/crypto">Cryptography</a></li>
+                        <li><a href="/benchmark/quorum">Quorum and audits</a></li>
+                        <li><a href="/benchmark/scheduler">Scheduler</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Project</h4>
+                    <ul>
+                        <li><a href="/token">$TasQ</a></li>
+                        <li><a href="https://github.com/tasqProject" target="_blank" rel="noreferrer">GitHub</a></li>
+                        <li><a href="https://x.com/tasq_x" target="_blank" rel="noreferrer">X</a></li>
+                        <li><a href="/team">Team</a></li>
+                        <li><a href="/faq">FAQ</a></li>
+                    </ul>
+                </div>
+            </div><a class="footer-ca"
+                href="https://robinhoodchain.blockscout.com/address/0xdc453b1405CfE25e2afBA8E7F4272b0a00437777"
+                target="_blank" rel="noreferrer"><span class="footer-ca-l">$TasQ token</span><span
+                    class="mono footer-ca-addr">0xdc453b1405CfE25e2afBA8E7F4272b0a00437777</span><svg width="13"
+                    height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M14 4h6v6M20 4l-9 9M18 14v6H4V6h6"></path>
+                </svg></a>
+            <div class="footer-bottom"><span>© <!-- -->2026<!-- --> The TasQ Project</span><span
+                    class="footer-filing">TasQ Project LLC, Filing ID 2026-002096016</span><span>tasqnetwork.io</span>
+            </div>
+        </div>
+    </footer>
+    <script src="/_next/static/chunks/webpack-585fe5fff95d53df.js" async=""></script>
+    <script>(self.__next_f = self.__next_f || []).push([0]); self.__next_f.push([2, null])</script>
+    <script>self.__next_f.push([1, "1:HL[\"/_next/static/media/0b78ff376f6b9734-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n2:HL[\"/_next/static/media/36966cca54120369-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n3:HL[\"/_next/static/media/723e11e5093b8e80.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n4:HL[\"/_next/static/css/d82c0453da8e13e4.css\",\"style\"]\n"])</script>
+    <script>self.__next_f.push([1, "5:I[12846,[],\"\"]\n7:I[47532,[\"2972\",\"static/chunks/2972-955172a662364f30.js\",\"7532\",\"static/chunks/7532-f1575ed86ed72f78.js\",\"1931\",\"static/chunks/app/page-091095158c37399d.js\"],\"SiteNav\"]\n8:I[78370,[\"2972\",\"static/chunks/2972-955172a662364f30.js\",\"7532\",\"static/chunks/7532-f1575ed86ed72f78.js\",\"1931\",\"static/chunks/app/page-091095158c37399d.js\"],\"HeroScene\"]\n9:I[72972,[\"2972\",\"static/chunks/2972-955172a662364f30.js\",\"7532\",\"static/chunks/7532-f1575ed86ed72f78.js\",\"1931\",\"static/chunks/app/page-091095158c37399d.js\"],\"\"]\na:I[47532,[\"2972\",\"static/chunks/2972-955172a662364f30.js\",\"7532\",\"static/chunks/7532-f1575ed86ed72f78.js\",\"1931\",\"static/chunks/app/page-091095158c37399d.js\"],\"Reveal\"]\nb:I[44213,[\"2972\",\"static/chunks/2972-955172a662364f30.js\",\"7532\",\"static/chunks/7532-f1575ed86ed72f78.js\",\"1931\",\"static/chunks/app/page-091095158c37399d.js\"],\"VideoSection\"]\nc:I[65786,[\"2972\",\"static/chunks/2972-955172a662364f30.js\",\"7532\",\"static/chunks/7532-f1575ed86ed72f78.js\",\"1931\",\"static/chunks/app/page-091095158c37399d.js\"],\"CtaScene\"]\nd:I[47532,[\"2972\",\"static/chunks/2972-955172a662364f30.js\",\"7532\",\"static/chunks/7532-f1575ed86ed72f78.js\",\"1931\",\"static/chunks/app/page-091095158c37399d.js\"],\"SiteFooter\"]\ne:I[4707,[],\"\"]\nf:I[36423,[],\"\"]\n10:I[88291,[\"3185\",\"static/chunks/app/layout-52002edde858f62f.js\"],\"Analytics\"]\n12:I[61060,[],\"\"]\n13:[]\n"])</script>
+    <script>self.__next_f.push([1, "0:[\"$\",\"$L5\",null,{\"buildId\":\"3o6zre5vqRqMkPrDl7WVQ\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"\"],\"initialTree\":[\"\",{\"children\":[\"__PAGE__\",{}]},\"$undefined\",\"$undefined\",true],\"initialSeedData\":[\"\",{\"children\":[\"__PAGE__\",{},[[\"$L6\",[[\"$\",\"$L7\",null,{}],[\"$\",\"main\",null,{\"children\":[[\"$\",\"section\",null,{\"className\":\"hero\",\"children\":[[\"$\",\"div\",null,{\"className\":\"hero-card\",\"children\":[[\"$\",\"$L8\",null,{\"background\":\"#0b0a12\"}],[\"$\",\"div\",null,{\"className\":\"hero-card-dim\",\"aria-hidden\":\"true\"}],[\"$\",\"div\",null,{\"className\":\"container hero-inner\",\"children\":[[\"$\",\"span\",null,{\"className\":\"rh-badge\",\"children\":[[\"$\",\"span\",null,{\"className\":\"rh-logo\",\"aria-hidden\":\"true\"}],\"Powered by Robinhood Chain\"]}],[\"$\",\"h1\",null,{\"className\":\"h-display\",\"children\":[\"Your AI,\",[\"$\",\"br\",null,{}],[\"$\",\"span\",null,{\"className\":\"hero-gradient-text\",\"children\":\"your data.\"}]]}],[\"$\",\"p\",null,{\"className\":\"lead hero-lead\",\"children\":\"GPU compute where the machine owner never sees what you run. You only pay for results you can verify.\"}],[\"$\",\"div\",null,{\"className\":\"hero-actions\",\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/app\",\"className\":\"btn btn-primary btn-lg\",\"onClick\":\"$undefined\",\"children\":[\"Launch app\",[\"$\",\"svg\",null,{\"width\":16,\"height\":16,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":1.7,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"aria-hidden\":\"true\",\"children\":[\"$\",\"path\",null,{\"d\":\"M5 12h14M13 6l6 6-6 6\"}]}]]}],[\"$\",\"a\",null,{\"href\":\"/tasq-yellow-paper.pdf\",\"target\":\"_blank\",\"rel\":\"noreferrer\",\"className\":\"btn btn-ghost btn-lg\",\"children\":\"Read Yellow Paper\"}]]}]]}]]}],[\"$\",\"$La\",null,{\"className\":\"visual hero-visual\",\"delay\":120,\"children\":[[\"$\",\"div\",null,{\"className\":\"visual-bar\",\"children\":[[\"$\",\"i\",null,{}],[\"$\",\"i\",null,{}],[\"$\",\"i\",null,{}],[\"$\",\"span\",null,{\"className\":\"addr\",\"children\":\"tasqnetwork.io/app/market\"}]]}],[\"$\",\"div\",null,{\"className\":\"visual-body\",\"children\":[[\"$\",\"div\",null,{\"className\":\"visual-side\",\"aria-hidden\":\"true\",\"children\":[[\"$\",\"span\",\"Overview\",{\"className\":\"\",\"children\":[[\"$\",\"svg\",null,{\"width\":15,\"height\":15,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":1.7,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"aria-hidden\":\"true\",\"children\":[\"$\",\"path\",null,{\"d\":\"M4 11 12 4l8 7v9h-5v-6H9v6H4z\"}]}],\"Overview\"]}],[\"$\",\"span\",\"Market\",{\"className\":\"on\",\"children\":[[\"$\",\"svg\",null,{\"width\":15,\"height\":15,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":1.7,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"aria-hidden\":\"true\",\"children\":[\"$\",\"path\",null,{\"d\":\"M4 5h16M4 12h16M4 19h16M8 5v14\"}]}],\"Market\"]}],[\"$\",\"span\",\"Rent\",{\"className\":\"\",\"children\":[[\"$\",\"svg\",null,{\"width\":15,\"height\":15,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":1.7,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"aria-hidden\":\"true\",\"children\":[\"$\",\"path\",null,{\"d\":\"M6 11h12v10H6zM8.5 11V8a3.5 3.5 0 0 1 7 0v3\"}]}],\"Rent\"]}],[\"$\",\"span\",\"Lend\",{\"className\":\"\",\"children\":[[\"$\",\"svg\",null,{\"width\":15,\"height\":15,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":1.7,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"aria-hidden\":\"true\",\"children\":[\"$\",\"path\",null,{\"d\":\"M4 4h16v6H4zM4 14h16v6H4zM8 7h.01M8 17h.01\"}]}],\"Lend\"]}],[\"$\",\"span\",\"Workloads\",{\"className\":\"\",\"children\":[[\"$\",\"svg\",null,{\"width\":15,\"height\":15,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":1.7,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"aria-hidden\":\"true\",\"children\":[\"$\",\"path\",null,{\"d\":\"M5 4v16M10 4v16M15 4v16M20 4v16\"}]}],\"Workloads\"]}],[\"$\",\"span\",\"Verify\",{\"className\":\"\",\"children\":[[\"$\",\"svg\",null,{\"width\":15,\"height\":15,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":1.7,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"aria-hidden\":\"true\",\"children\":[\"$\",\"path\",null,{\"d\":\"M12 3 4.5 6v6c0 4.4 3.2 7.9 7.5 9 4.3-1.1 7.5-4.6 7.5-9V6L12 3zM9 12l2 2 4-4\"}]}],\"Verify\"]}]]}],[\"$\",\"div\",null,{\"className\":\"visual-main\",\"children\":[[\"$\",\"div\",null,{\"className\":\"row-between\",\"children\":[[\"$\",\"div\",null,{\"className\":\"h4\",\"children\":\"Market\"}],[\"$\",\"span\",null,{\"className\":\"vcount mono\",\"children\":[4,\" offers\"]}]]}],[\"$\",\"div\",null,{\"className\":\"vrow head\",\"aria-hidden\":\"true\",\"children\":[[\"$\",\"span\",null,{\"children\":\"GPU\"}],[\"$\",\"span\",null,{\"children\":\"Modes\"}],[\"$\",\"span\",null,{\"children\":\"Region\"}],[\"$\",\"span\",null,{\"children\":\"Rep.\"}],[\"$\",\"span\",null,{\"style\":{\"textAlign\":\"right\"},\"children\":\"Per hour\"}]]}],[[\"$\",\"div\",\"H100 80GB\",{\"className\":\"vrow item\",\"children\":[[\"$\",\"span\",null,{\"style\":{\"fontWeight\":500},\"children\":\"H100 80GB\"}],[\"$\",\"span\",null,{\"className\":\"row\",\"style\":{\"gap\":4},\"children\":[[\"$\",\"span\",\"A\",{\"className\":\"chip-mode A\",\"children\":\"A\"}],[\"$\",\"span\",\"R\",{\"className\":\"chip-mode R\",\"children\":\"R\"}]]}],[\"$\",\"span\",null,{\"className\":\"muted\",\"children\":\"Europe\"}],[\"$\",\"span\",null,{\"className\":\"mono muted\",\"children\":\"0.982\"}],[\"$\",\"span\",null,{\"className\":\"mono\",\"style\":{\"textAlign\":\"right\"},\"children\":\"$$2.48\"}]]}],[\"$\",\"div\",\"H200 141GB\",{\"className\":\"vrow item sel\",\"children\":[[\"$\",\"span\",null,{\"style\":{\"fontWeight\":500},\"children\":\"H200 141GB\"}],[\"$\",\"span\",null,{\"className\":\"row\",\"style\":{\"gap\":4},\"children\":[[\"$\",\"span\",\"A\",{\"className\":\"chip-mode A\",\"children\":\"A\"}],[\"$\",\"span\",\"R\",{\"className\":\"chip-mode R\",\"children\":\"R\"}],[\"$\",\"span\",\"P\",{\"className\":\"chip-mode P\",\"children\":\"P\"}]]}],[\"$\",\"span\",null,{\"className\":\"muted\",\"children\":\"North America\"}],[\"$\",\"span\",null,{\"className\":\"mono muted\",\"children\":\"0.967\"}],[\"$\",\"span\",null,{\"className\":\"mono\",\"style\":{\"textAlign\":\"right\"},\"children\":\"$$3.31\"}]]}],[\"$\",\"div\",\"L40S 48GB\",{\"className\":\"vrow item\",\"children\":[[\"$\",\"span\",null,{\"style\":{\"fontWeight\":500},\"children\":\"L40S 48GB\"}],[\"$\",\"span\",null,{\"className\":\"row\",\"style\":{\"gap\":4},\"children\":[[\"$\",\"span\",\"R\",{\"className\":\"chip-mode R\",\"children\":\"R\"}]]}],[\"$\",\"span\",null,{\"className\":\"muted\",\"children\":\"Asia Pacific\"}],[\"$\",\"span\",null,{\"className\":\"mono muted\",\"children\":\"0.941\"}],[\"$\",\"span\",null,{\"className\":\"mono\",\"style\":{\"textAlign\":\"right\"},\"children\":\"$$0.91\"}]]}],[\"$\",\"div\",\"RTX 5090 32GB\",{\"className\":\"vrow item\",\"children\":[[\"$\",\"span\",null,{\"style\":{\"fontWeight\":500},\"children\":\"RTX 5090 32GB\"}],[\"$\",\"span\",null,{\"className\":\"row\",\"style\":{\"gap\":4},\"children\":[[\"$\",\"span\",\"R\",{\"className\":\"chip-mode R\",\"children\":\"R\"}],[\"$\",\"span\",\"P\",{\"className\":\"chip-mode P\",\"children\":\"P\"}]]}],[\"$\",\"span\",null,{\"className\":\"muted\",\"children\":\"Europe\"}],[\"$\",\"span\",null,{\"className\":\"mono muted\",\"children\":\"0.958\"}],[\"$\",\"span\",null,{\"className\":\"mono\",\"style\":{\"textAlign\":\"right\"},\"children\":\"$$0.66\"}]]}]]]}],[\"$\",\"div\",null,{\"className\":\"visual-aside\",\"children\":[[\"$\",\"div\",null,{\"className\":\"row-between\",\"children\":[[\"$\",\"div\",null,{\"className\":\"h4\",\"children\":\"Rent privately\"}],[\"$\",\"span\",null,{\"className\":\"chip-mode A\",\"children\":\"A\"}]]}],[\"$\",\"div\",null,{\"children\":[[\"$\",\"div\",null,{\"className\":\"vkv\",\"children\":[[\"$\",\"span\",null,{\"className\":\"muted\",\"children\":\"GPU\"}],[\"$\",\"span\",null,{\"children\":\"H200 141GB\"}]]}],[\"$\",\"div\",null,{\"className\":\"vkv\",\"children\":[[\"$\",\"span\",null,{\"className\":\"muted\",\"children\":\"Enclave\"}],[\"$\",\"span\",null,{\"children\":\"NVIDIA CC + TDX\"}]]}],[\"$\",\"div\",null,{\"className\":\"vkv\",\"children\":[[\"$\",\"span\",null,{\"className\":\"muted\",\"children\":\"Key exchange\"}],[\"$\",\"span\",null,{\"children\":\"X25519 + ML-KEM\"}]]}],[\"$\",\"div\",null,{\"className\":\"vkv\",\"children\":[[\"$\",\"span\",null,{\"className\":\"muted\",\"children\":\"Duration\"}],[\"$\",\"span\",null,{\"children\":\"8 h\"}]]}],[\"$\",\"div\",null,{\"className\":\"vkv\",\"children\":[[\"$\",\"span\",null,{\"className\":\"muted\",\"children\":\"Estimate\"}],[\"$\",\"span\",null,{\"className\":\"mono\",\"children\":\"$$27.80\"}]]}]]}],[\"$\",\"div\",null,{\"className\":\"btn btn-brand btn-block\",\"style\":{\"height\":40},\"children\":[[\"$\",\"svg\",null,{\"width\":15,\"height\":15,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":1.7,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"aria-hidden\":\"true\",\"children\":[\"$\",\"path\",null,{\"d\":\"M15 9a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM12 12v9M12 16h3M12 19h2\"}]}],\"Sign intent\"]}],[\"$\",\"p\",null,{\"className\":\"tiny faint\",\"children\":\"Inputs stay encrypted until the enclave proves its code.\"}]]}]]}]]}]]}],[\"$\",\"section\",null,{\"className\":\"section\",\"id\":\"product\",\"children\":[\"$\",\"div\",null,{\"className\":\"container\",\"children\":[[\"$\",\"$La\",null,{\"className\":\"section-head\",\"children\":[[\"$\",\"p\",null,{\"className\":\"eyebrow\",\"children\":\"The app\"}],[\"$\",\"h2\",null,{\"className\":\"h1\",\"children\":\"Five ways to use private compute\"}],[\"$\",\"p\",null,{\"className\":\"lead\",\"children\":\"Sign in with a wallet through Privy on Robinhood Chain. Every action produces a signed intent you can inspect.\"}]]}],[\"$\",\"div\",null,{\"className\":\"grid g3\",\"children\":[[\"$\",\"$La\",null,{\"className\":\"tile wide\",\"as\":\"div\",\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/app/market\",\"className\":\"row-between stretch\",\"children\":[\"$\",\"div\",null,{\"className\":\"row\",\"style\":{\"gap\":14},\"children\":[[\"$\",\"span\",null,{\"className\":\"icon\",\"children\":[\"$\",\"svg\",null,{\"width\":20,\"height\":20,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":1.7,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"aria-hidden\":\"true\",\"children\":[\"$\",\"path\",null,{\"d\":\"M4 5h16M4 12h16M4 19h16M8 5v14\"}]}]}],[\"$\",\"span\",null,{\"className\":\"h3\",\"children\":\"Market\"}]]}]}],[\"$\",\"p\",null,{\"className\":\"muted\",\"children\":\"Every GPU offer in one place, with the assurance modes it supports, attestation type, region, reputation and live price.\"}],[\"$\",\"div\",null,{\"style\":{\"marginTop\":\"auto\",\"display\":\"grid\",\"gap\":6},\"children\":[[\"$\",\"div\",\"H100 80GB\",{\"className\":\"row-between\",\"style\":{\"padding\":\"10px 12px\",\"borderRadius\":10,\"border\":\"1px solid var(--line)\",\"background\":\"rgba(255,255,255,0.02)\",\"fontSize\":13},\"children\":[[\"$\",\"span\",null,{\"children\":\"H100 80GB\"}],[\"$\",\"span\",null,{\"className\":\"row\",\"style\":{\"gap\":4},\"children\":[[\"$\",\"span\",\"A\",{\"className\":\"chip-mode A\",\"children\":\"A\"}],[\"$\",\"span\",\"R\",{\"className\":\"chip-mode R\",\"children\":\"R\"}]]}],[\"$\",\"span\",null,{\"className\":\"mono\",\"children\":\"$$2.48\"}]]}],[\"$\",\"div\",\"A100 80GB\",{\"className\":\"row-between\",\"style\":{\"padding\":\"10px 12px\",\"borderRadius\":10,\"border\":\"1px solid var(--line)\",\"background\":\"rgba(255,255,255,0.02)\",\"fontSize\":13},\"children\":[[\"$\",\"span\",null,{\"children\":\"A100 80GB\"}],[\"$\",\"span\",null,{\"className\":\"row\",\"style\":{\"gap\":4},\"children\":[[\"$\",\"span\",\"R\",{\"className\":\"chip-mode R\",\"children\":\"R\"}],[\"$\",\"span\",\"P\",{\"className\":\"chip-mode P\",\"children\":\"P\"}]]}],[\"$\",\"span\",null,{\"className\":\"mono\",\"children\":\"$$1.41\"}]]}],[\"$\",\"div\",\"RTX 4090 24GB\",{\"className\":\"row-between\",\"style\":{\"padding\":\"10px 12px\",\"borderRadius\":10,\"border\":\"1px solid var(--line)\",\"background\":\"rgba(255,255,255,0.02)\",\"fontSize\":13},\"children\":[[\"$\",\"span\",null,{\"children\":\"RTX 4090 24GB\"}],[\"$\",\"span\",null,{\"className\":\"row\",\"style\":{\"gap\":4},\"children\":[[\"$\",\"span\",\"R\",{\"className\":\"chip-mode R\",\"children\":\"R\"}]]}],[\"$\",\"span\",null,{\"className\":\"mono\",\"children\":\"$$0.43\"}]]}]]}]]}],[\"$\",\"$La\",null,{\"className\":\"tile\",\"delay\":60,\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/app/rent\",\"className\":\"row-between stretch\",\"children\":[\"$\",\"div\",null,{\"className\":\"row\",\"style\":{\"gap\":14},\"children\":[[\"$\",\"span\",null,{\"className\":\"icon\",\"children\":[\"$\",\"svg\",null,{\"width\":20,\"height\":20,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":1.7,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"aria-hidden\":\"true\",\"children\":[\"$\",\"path\",null,{\"d\":\"M6 11h12v10H6zM8.5 11V8a3.5 3.5 0 0 1 7 0v3\"}]}]}],[\"$\",\"span\",null,{\"className\":\"h3\",\"children\":\"Rent privately\"}]]}]}],[\"$\",\"p\",null,{\"className\":\"muted\",\"children\":\"Choose a GPU, set hours and a price ceiling. Mark the job confidential and it can only run inside an attested enclave.\"}],[\"$\",\"div\",null,{\"className\":\"tile-foot\",\"children\":[[\"$\",\"span\",null,{\"children\":\"Mode A, R or P\"}],[\"$\",\"svg\",null,{\"width\":16,\"height\":16,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":1.7,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"aria-hidden\":\"true\",\"children\":[\"$\",\"path\",null,{\"d\":\"M7 17 17 7M8 7h9v9\"}]}]]}]]}],[\"$\",\"$La\",null,{\"className\":\"tile\",\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/app/lend\",\"className\":\"row-between stretch\",\"children\":[\"$\",\"div\",null,{\"className\":\"row\",\"style\":{\"gap\":14},\"children\":[[\"$\",\"span\",null,{\"className\":\"icon\",\"children\":[\"$\",\"svg\",null,{\"width\":20,\"height\":20,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":1.7,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"aria-hidden\":\"true\",\"children\":[\"$\",\"path\",null,{\"d\":\"M4 4h16v6H4zM4 14h16v6H4zM8 7h.01M8 17h.01\"}]}]}],[\"$\",\"span\",null,{\"className\":\"h3\",\"children\":\"Lend your GPU\"}]]}]}],[\"$\",\"p\",null,{\"className\":\"muted\",\"children\":\"Register hardware, see which modes it qualifies for, and derive the ledger ID that ties your key to your machine.\"}],[\"$\",\"div\",null,{\"className\":\"tile-foot\",\"children\":[[\"$\",\"span\",null,{\"children\":\"Earn per verified unit\"}],[\"$\",\"svg\",null,{\"width\":16,\"height\":16,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":1.7,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"aria-hidden\":\"true\",\"children\":[\"$\",\"path\",null,{\"d\":\"M7 17 17 7M8 7h9v9\"}]}]]}]]}],[\"$\",\"$La\",null,{\"className\":\"tile wide\",\"delay\":60,\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/app/workloads\",\"className\":\"row-between stretch\",\"children\":[\"$\",\"div\",null,{\"className\":\"row\",\"style\":{\"gap\":14},\"children\":[[\"$\",\"span\",null,{\"className\":\"icon\",\"children\":[\"$\",\"svg\",null,{\"width\":20,\"height\":20,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":1.7,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"aria-hidden\":\"true\",\"children\":[\"$\",\"path\",null,{\"d\":\"M5 4v16M10 4v16M15 4v16M20 4v16\"}]}]}],[\"$\",\"span\",null,{\"className\":\"h3\",\"children\":\"Parallel workloads\"}]]}]}],[\"$\",\"p\",null,{\"className\":\"muted\",\"children\":\"Split a job into units that run across many machines at once. The admission check tells you if your audit rate is high enough for what the result is worth.\"}],[\"$\",\"div\",null,{\"style\":{\"marginTop\":\"auto\",\"display\":\"grid\",\"gridTemplateColumns\":\"repeat(18, 1fr)\",\"gap\":4,\"alignItems\":\"end\",\"height\":64},\"aria-hidden\":\"true\",\"children\":[[\"$\",\"div\",\"0\",{\"style\":{\"height\":\"100%\",\"borderRadius\":4,\"background\":\"rgba(255,255,255,0.05)\",\"position\":\"relative\",\"overflow\":\"hidden\"},\"children\":[\"$\",\"div\",null,{\"style\":{\"position\":\"absolute\",\"left\":0,\"right\":0,\"bottom\":0,\"height\":\"100%\",\"background\":\"var(--brand)\"}}]}],[\"$\",\"div\",\"1\",{\"style\":{\"height\":\"100%\",\"borderRadius\":4,\"background\":\"rgba(255,255,255,0.05)\",\"position\":\"relative\",\"overflow\":\"hidden\"},\"children\":[\"$\",\"div\",null,{\"style\":{\"position\":\"absolute\",\"left\":0,\"right\":0,\"bottom\":0,\"height\":\"100%\",\"background\":\"var(--brand)\"}}]}],[\"$\",\"div\",\"2\",{\"style\":{\"height\":\"100%\",\"borderRadius\":4,\"background\":\"rgba(255,255,255,0.05)\",\"position\":\"relative\",\"overflow\":\"hidden\"},\"children\":[\"$\",\"div\",null,{\"style\":{\"position\":\"absolute\",\"left\":0,\"right\":0,\"bottom\":0,\"height\":\"100%\",\"background\":\"var(--brand)\"}}]}],[\"$\",\"div\",\"3\",{\"style\":{\"height\":\"100%\",\"borderRadius\":4,\"background\":\"rgba(255,255,255,0.05)\",\"position\":\"relative\",\"overflow\":\"hidden\"},\"children\":[\"$\",\"div\",null,{\"style\":{\"position\":\"absolute\",\"left\":0,\"right\":0,\"bottom\":0,\"height\":\"100%\",\"background\":\"var(--brand)\"}}]}],[\"$\",\"div\",\"4\",{\"style\":{\"height\":\"100%\",\"borderRadius\":4,\"background\":\"rgba(255,255,255,0.05)\",\"position\":\"relative\",\"overflow\":\"hidden\"},\"children\":[\"$\",\"div\",null,{\"style\":{\"position\":\"absolute\",\"left\":0,\"right\":0,\"bottom\":0,\"height\":\"80%\",\"background\":\"rgba(139,77,255,0.45)\"}}]}],[\"$\",\"div\",\"5\",{\"style\":{\"height\":\"100%\",\"borderRadius\":4,\"background\":\"rgba(255,255,255,0.05)\",\"position\":\"relative\",\"overflow\":\"hidden\"},\"children\":[\"$\",\"div\",null,{\"style\":{\"position\":\"absolute\",\"left\":0,\"right\":0,\"bottom\":0,\"height\":\"100%\",\"background\":\"var(--brand)\"}}]}],[\"$\",\"div\",\"6\",{\"style\":{\"height\":\"100%\",\"borderRadius\":4,\"background\":\"rgba(255,255,255,0.05)\",\"position\":\"relative\",\"overflow\":\"hidden\"},\"children\":[\"$\",\"div\",null,{\"style\":{\"position\":\"absolute\",\"left\":0,\"right\":0,\"bottom\":0,\"height\":\"60%\",\"background\":\"rgba(139,77,255,0.45)\"}}]}],[\"$\",\"div\",\"7\",{\"style\":{\"height\":\"100%\",\"borderRadius\":4,\"background\":\"rgba(255,255,255,0.05)\",\"position\":\"relative\",\"overflow\":\"hidden\"},\"children\":[\"$\",\"div\",null,{\"style\":{\"position\":\"absolute\",\"left\":0,\"right\":0,\"bottom\":0,\"height\":\"100%\",\"background\":\"var(--brand)\"}}]}],[\"$\",\"div\",\"8\",{\"style\":{\"height\":\"100%\",\"borderRadius\":4,\"background\":\"rgba(255,255,255,0.05)\",\"position\":\"relative\",\"overflow\":\"hidden\"},\"children\":[\"$\",\"div\",null,{\"style\":{\"position\":\"absolute\",\"left\":0,\"right\":0,\"bottom\":0,\"height\":\"40%\",\"background\":\"rgba(139,77,255,0.45)\"}}]}],[\"$\",\"div\",\"9\",{\"style\":{\"height\":\"100%\",\"borderRadius\":4,\"background\":\"rgba(255,255,255,0.05)\",\"position\":\"relative\",\"overflow\":\"hidden\"},\"children\":[\"$\",\"div\",null,{\"style\":{\"position\":\"absolute\",\"left\":0,\"right\":0,\"bottom\":0,\"height\":\"90%\",\"background\":\"rgba(139,77,255,0.45)\"}}]}],[\"$\",\"div\",\"10\",{\"style\":{\"height\":\"100%\",\"borderRadius\":4,\"background\":\"rgba(255,255,255,0.05)\",\"position\":\"relative\",\"overflow\":\"hidden\"},\"children\":[\"$\",\"div\",null,{\"style\":{\"position\":\"absolute\",\"left\":0,\"right\":0,\"bottom\":0,\"height\":\"30%\",\"background\":\"rgba(139,77,255,0.45)\"}}]}],[\"$\",\"div\",\"11\",{\"style\":{\"height\":\"100%\",\"borderRadius\":4,\"background\":\"rgba(255,255,255,0.05)\",\"position\":\"relative\",\"overflow\":\"hidden\"},\"children\":[\"$\",\"div\",null,{\"style\":{\"position\":\"absolute\",\"left\":0,\"right\":0,\"bottom\":0,\"height\":\"70%\",\"background\":\"rgba(139,77,255,0.45)\"}}]}],[\"$\",\"div\",\"12\",{\"style\":{\"height\":\"100%\",\"borderRadius\":4,\"background\":\"rgba(255,255,255,0.05)\",\"position\":\"relative\",\"overflow\":\"hidden\"},\"children\":[\"$\",\"div\",null,{\"style\":{\"position\":\"absolute\",\"left\":0,\"right\":0,\"bottom\":0,\"height\":\"20%\",\"background\":\"rgba(139,77,255,0.45)\"}}]}],[\"$\",\"div\",\"13\",{\"style\":{\"height\":\"100%\",\"borderRadius\":4,\"background\":\"rgba(255,255,255,0.05)\",\"position\":\"relative\",\"overflow\":\"hidden\"},\"children\":[\"$\",\"div\",null,{\"style\":{\"position\":\"absolute\",\"left\":0,\"right\":0,\"bottom\":0,\"height\":\"50%\",\"background\":\"rgba(139,77,255,0.45)\"}}]}],[\"$\",\"div\",\"14\",{\"style\":{\"height\":\"100%\",\"borderRadius\":4,\"background\":\"rgba(255,255,255,0.05)\",\"position\":\"relative\",\"overflow\":\"hidden\"},\"children\":[\"$\",\"div\",null,{\"style\":{\"position\":\"absolute\",\"left\":0,\"right\":0,\"bottom\":0,\"height\":\"10%\",\"background\":\"rgba(139,77,255,0.45)\"}}]}],[\"$\",\"div\",\"15\",{\"style\":{\"height\":\"100%\",\"borderRadius\":4,\"background\":\"rgba(255,255,255,0.05)\",\"position\":\"relative\",\"overflow\":\"hidden\"},\"children\":[\"$\",\"div\",null,{\"style\":{\"position\":\"absolute\",\"left\":0,\"right\":0,\"bottom\":0,\"height\":\"0%\",\"background\":\"rgba(139,77,255,0.45)\"}}]}],[\"$\",\"div\",\"16\",{\"style\":{\"height\":\"100%\",\"borderRadius\":4,\"background\":\"rgba(255,255,255,0.05)\",\"position\":\"relative\",\"overflow\":\"hidden\"},\"children\":[\"$\",\"div\",null,{\"style\":{\"position\":\"absolute\",\"left\":0,\"right\":0,\"bottom\":0,\"height\":\"0%\",\"background\":\"rgba(139,77,255,0.45)\"}}]}],[\"$\",\"div\",\"17\",{\"style\":{\"height\":\"100%\",\"borderRadius\":4,\"background\":\"rgba(255,255,255,0.05)\",\"position\":\"relative\",\"overflow\":\"hidden\"},\"children\":[\"$\",\"div\",null,{\"style\":{\"position\":\"absolute\",\"left\":0,\"right\":0,\"bottom\":0,\"height\":\"0%\",\"background\":\"rgba(139,77,255,0.45)\"}}]}]]}]]}],[\"$\",\"$La\",null,{\"className\":\"tile wide\",\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/app/verify\",\"className\":\"row-between stretch\",\"children\":[\"$\",\"div\",null,{\"className\":\"row\",\"style\":{\"gap\":14},\"children\":[[\"$\",\"span\",null,{\"className\":\"icon\",\"children\":[\"$\",\"svg\",null,{\"width\":20,\"height\":20,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":1.7,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"aria-hidden\":\"true\",\"children\":[\"$\",\"path\",null,{\"d\":\"M12 3 4.5 6v6c0 4.4 3.2 7.9 7.5 9 4.3-1.1 7.5-4.6 7.5-9V6L12 3zM9 12l2 2 4-4\"}]}]}],[\"$\",\"span\",null,{\"className\":\"h3\",\"children\":\"Verify results\"}]]}]}],[\"$\",\"p\",null,{\"className\":\"muted\",\"children\":\"Hash an output file, check a Merkle inclusion proof, or recover the signer of a receipt. It all runs in your browser.\"}],[\"$\",\"div\",null,{\"style\":{\"marginTop\":\"auto\",\"display\":\"grid\",\"gap\":8},\"children\":[[\"$\",\"div\",null,{\"className\":\"hash\",\"style\":{\"fontSize\":11.5},\"children\":[[\"$\",\"span\",null,{\"className\":\"faint\",\"children\":\"expected \"}],\"0x7c1e9a52d4b0f3e6a8c2d19b5f0e74a3c6d8b21e9f4a07c35d6e8b1f2a9c4d07\"]}],[\"$\",\"div\",null,{\"className\":\"hash\",\"style\":{\"fontSize\":11.5},\"children\":[[\"$\",\"span\",null,{\"className\":\"faint\",\"children\":\"computed \"}],\"0x7c1e9a52d4b0f3e6a8c2d19b5f0e74a3c6d8b21e9f4a07c35d6e8b1f2a9c4d07\"]}],[\"$\",\"div\",null,{\"className\":\"row\",\"style\":{\"gap\":8,\"color\":\"var(--ok)\",\"fontSize\":13},\"children\":[[\"$\",\"svg\",null,{\"width\":16,\"height\":16,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":1.7,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"aria-hidden\":\"true\",\"children\":[\"$\",\"path\",null,{\"d\":\"M5 12.5l4.5 4.5L19 7.5\"}]}],\"Match. Computed locally with BLAKE3.\"]}]]}]]}],[\"$\",\"$La\",null,{\"className\":\"tile\",\"delay\":60,\"style\":{\"background\":\"linear-gradient(180deg, rgba(139,77,255,0.12), var(--panel) 70%)\",\"borderColor\":\"var(--brand-line)\"},\"children\":[[\"$\",\"a\",null,{\"href\":\"/tasq-yellow-paper.pdf\",\"className\":\"row-between stretch\",\"children\":[\"$\",\"div\",null,{\"className\":\"row\",\"style\":{\"gap\":14},\"children\":[[\"$\",\"span\",null,{\"className\":\"icon\",\"children\":[\"$\",\"svg\",null,{\"width\":20,\"height\":20,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":1.7,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"aria-hidden\":\"true\",\"children\":[\"$\",\"path\",null,{\"d\":\"M7 3h7l5 5v13H7zM14 3v5h5\"}]}]}],[\"$\",\"span\",null,{\"className\":\"h3\",\"children\":\"How it works, in full\"}]]}]}],[\"$\",\"p\",null,{\"className\":\"muted\",\"children\":\"The yellow paper covers the threat model, the admission rule, scheduling, reputation and what we have not solved yet.\"}],[\"$\",\"div\",null,{\"className\":\"tile-foot\",\"children\":[[\"$\",\"span\",null,{\"children\":\"23 pages\"}],[\"$\",\"svg\",null,{\"width\":16,\"height\":16,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":1.7,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"aria-hidden\":\"true\",\"children\":[\"$\",\"path\",null,{\"d\":\"M7 17 17 7M8 7h9v9\"}]}]]}]]}]]}]]}]}],[\"$\",\"div\",null,{\"className\":\"section-divider\",\"aria-hidden\":\"true\"}],[\"$\",\"$Lb\",null,{}],[\"$\",\"div\",null,{\"className\":\"section-divider\",\"aria-hidden\":\"true\"}],[\"$\",\"section\",null,{\"className\":\"section\",\"id\":\"modes\",\"style\":{\"paddingTop\":40},\"children\":[\"$\",\"div\",null,{\"className\":\"container\",\"children\":[[\"$\",\"$La\",null,{\"className\":\"section-head\",\"children\":[[\"$\",\"p\",null,{\"className\":\"eyebrow\",\"children\":\"Assurance modes\"}],[\"$\",\"h2\",null,{\"className\":\"h1\",\"children\":\"Choose how much you trust the machine\"}],[\"$\",\"p\",null,{\"className\":\"lead\",\"children\":\"Different jobs need different guarantees. Every offer in the market says which modes it supports, and every price shows what each guarantee costs.\"}]]}],[\"$\",\"div\",null,{\"className\":\"grid g3\",\"children\":[[\"$\",\"$La\",\"A\",{\"delay\":0,\"className\":\"mode-card featured\",\"children\":[[\"$\",\"div\",null,{\"className\":\"mode-banner mb-a\",\"aria-hidden\":\"true\",\"children\":[\"$\",\"svg\",null,{\"viewBox\":\"0 0 320 128\",\"preserveAspectRatio\":\"xMidYMid slice\",\"className\":\"mb-svg\",\"children\":[[\"$\",\"g\",null,{\"className\":\"mb-grid\",\"fill\":\"currentColor\",\"children\":[[\"$\",\"circle\",\"0\",{\"cx\":24,\"cy\":26,\"r\":1}],[\"$\",\"circle\",\"1\",{\"cx\":58,\"cy\":26,\"r\":1}],[\"$\",\"circle\",\"2\",{\"cx\":92,\"cy\":26,\"r\":1}],[\"$\",\"circle\",\"3\",{\"cx\":126,\"cy\":26,\"r\":1}],[\"$\",\"circle\",\"4\",{\"cx\":160,\"cy\":26,\"r\":1}],[\"$\",\"circle\",\"5\",{\"cx\":194,\"cy\":26,\"r\":1}],[\"$\",\"circle\",\"6\",{\"cx\":228,\"cy\":26,\"r\":1}],[\"$\",\"circle\",\"7\",{\"cx\":262,\"cy\":26,\"r\":1}],[\"$\",\"circle\",\"8\",{\"cx\":296,\"cy\":26,\"r\":1}],[\"$\",\"circle\",\"9\",{\"cx\":24,\"cy\":51,\"r\":1}],[\"$\",\"circle\",\"10\",{\"cx\":58,\"cy\":51,\"r\":1}],[\"$\",\"circle\",\"11\",{\"cx\":92,\"cy\":51,\"r\":1}],[\"$\",\"circle\",\"12\",{\"cx\":126,\"cy\":51,\"r\":1}],[\"$\",\"circle\",\"13\",{\"cx\":160,\"cy\":51,\"r\":1}],[\"$\",\"circle\",\"14\",{\"cx\":194,\"cy\":51,\"r\":1}],[\"$\",\"circle\",\"15\",{\"cx\":228,\"cy\":51,\"r\":1}],[\"$\",\"circle\",\"16\",{\"cx\":262,\"cy\":51,\"r\":1}],[\"$\",\"circle\",\"17\",{\"cx\":296,\"cy\":51,\"r\":1}],[\"$\",\"circle\",\"18\",{\"cx\":24,\"cy\":76,\"r\":1}],[\"$\",\"circle\",\"19\",{\"cx\":58,\"cy\":76,\"r\":1}],[\"$\",\"circle\",\"20\",{\"cx\":92,\"cy\":76,\"r\":1}],[\"$\",\"circle\",\"21\",{\"cx\":126,\"cy\":76,\"r\":1}],[\"$\",\"circle\",\"22\",{\"cx\":160,\"cy\":76,\"r\":1}],[\"$\",\"circle\",\"23\",{\"cx\":194,\"cy\":76,\"r\":1}],[\"$\",\"circle\",\"24\",{\"cx\":228,\"cy\":76,\"r\":1}],[\"$\",\"circle\",\"25\",{\"cx\":262,\"cy\":76,\"r\":1}],[\"$\",\"circle\",\"26\",{\"cx\":296,\"cy\":76,\"r\":1}],[\"$\",\"circle\",\"27\",{\"cx\":24,\"cy\":101,\"r\":1}],[\"$\",\"circle\",\"28\",{\"cx\":58,\"cy\":101,\"r\":1}],[\"$\",\"circle\",\"29\",{\"cx\":92,\"cy\":101,\"r\":1}],[\"$\",\"circle\",\"30\",{\"cx\":126,\"cy\":101,\"r\":1}],[\"$\",\"circle\",\"31\",{\"cx\":160,\"cy\":101,\"r\":1}],[\"$\",\"circle\",\"32\",{\"cx\":194,\"cy\":101,\"r\":1}],[\"$\",\"circle\",\"33\",{\"cx\":228,\"cy\":101,\"r\":1}],[\"$\",\"circle\",\"34\",{\"cx\":262,\"cy\":101,\"r\":1}],[\"$\",\"circle\",\"35\",{\"cx\":296,\"cy\":101,\"r\":1}]]}],[\"$\",\"g\",null,{\"children\":[[\"$\",\"line\",null,{\"x1\":18,\"y1\":64,\"x2\":302,\"y2\":64,\"className\":\"mb-flow\",\"strokeDasharray\":\"2 10\"}],[\"$\",\"circle\",null,{\"cx\":160,\"cy\":64,\"r\":31,\"className\":\"mb-breathe\"}],[\"$\",\"circle\",null,{\"cx\":160,\"cy\":64,\"r\":21,\"className\":\"mb-core-ring\"}],[\"$\",\"rect\",null,{\"x\":150,\"y\":63,\"width\":20,\"height\":14,\"rx\":2.5,\"className\":\"mb-lockbody\"}],[\"$\",\"path\",null,{\"d\":\"M154 63v-4a6 6 0 0 1 12 0v4\",\"className\":\"mb-lockshackle\"}]]}],false,false]}]}],[\"$\",\"div\",null,{\"className\":\"mode-head\",\"children\":[[\"$\",\"div\",null,{\"className\":\"mode-title\",\"children\":\"Attested\"}],[\"$\",\"span\",null,{\"className\":\"badge badge-brand mode-head-badge\",\"children\":\"Use for private data\"}]]}],[\"$\",\"dl\",null,{\"className\":\"kv\",\"children\":[[\"$\",\"div\",\"Privacy\",{\"children\":[[\"$\",\"dt\",null,{\"children\":\"Privacy\"}],[\"$\",\"dd\",null,{\"children\":\"Inputs, weights and outputs are decrypted only inside the enclave.\"}]]}],[\"$\",\"div\",\"Integrity\",{\"children\":[[\"$\",\"dt\",null,{\"children\":\"Integrity\"}],[\"$\",\"dd\",null,{\"children\":\"The enclave proves the exact runtime image before keys are released.\"}]]}],[\"$\",\"div\",\"Best for\",{\"children\":[[\"$\",\"dt\",null,{\"children\":\"Best for\"}],[\"$\",\"dd\",null,{\"children\":\"Confidential inference and fine-tuning.\"}]]}],[\"$\",\"div\",\"Cost\",{\"children\":[[\"$\",\"dt\",null,{\"children\":\"Cost\"}],[\"$\",\"dd\",null,{\"children\":\"About 5% over attested GPU time.\"}]]}]]}]]}],[\"$\",\"$La\",\"R\",{\"delay\":60,\"className\":\"mode-card\",\"children\":[[\"$\",\"div\",null,{\"className\":\"mode-banner mb-r\",\"aria-hidden\":\"true\",\"children\":[\"$\",\"svg\",null,{\"viewBox\":\"0 0 320 128\",\"preserveAspectRatio\":\"xMidYMid slice\",\"className\":\"mb-svg\",\"children\":[[\"$\",\"g\",null,{\"className\":\"mb-grid\",\"fill\":\"currentColor\",\"children\":[[\"$\",\"circle\",\"0\",{\"cx\":24,\"cy\":26,\"r\":1}],[\"$\",\"circle\",\"1\",{\"cx\":58,\"cy\":26,\"r\":1}],[\"$\",\"circle\",\"2\",{\"cx\":92,\"cy\":26,\"r\":1}],[\"$\",\"circle\",\"3\",{\"cx\":126,\"cy\":26,\"r\":1}],[\"$\",\"circle\",\"4\",{\"cx\":160,\"cy\":26,\"r\":1}],[\"$\",\"circle\",\"5\",{\"cx\":194,\"cy\":26,\"r\":1}],[\"$\",\"circle\",\"6\",{\"cx\":228,\"cy\":26,\"r\":1}],[\"$\",\"circle\",\"7\",{\"cx\":262,\"cy\":26,\"r\":1}],[\"$\",\"circle\",\"8\",{\"cx\":296,\"cy\":26,\"r\":1}],[\"$\",\"circle\",\"9\",{\"cx\":24,\"cy\":51,\"r\":1}],[\"$\",\"circle\",\"10\",{\"cx\":58,\"cy\":51,\"r\":1}],[\"$\",\"circle\",\"11\",{\"cx\":92,\"cy\":51,\"r\":1}],[\"$\",\"circle\",\"12\",{\"cx\":126,\"cy\":51,\"r\":1}],[\"$\",\"circle\",\"13\",{\"cx\":160,\"cy\":51,\"r\":1}],[\"$\",\"circle\",\"14\",{\"cx\":194,\"cy\":51,\"r\":1}],[\"$\",\"circle\",\"15\",{\"cx\":228,\"cy\":51,\"r\":1}],[\"$\",\"circle\",\"16\",{\"cx\":262,\"cy\":51,\"r\":1}],[\"$\",\"circle\",\"17\",{\"cx\":296,\"cy\":51,\"r\":1}],[\"$\",\"circle\",\"18\",{\"cx\":24,\"cy\":76,\"r\":1}],[\"$\",\"circle\",\"19\",{\"cx\":58,\"cy\":76,\"r\":1}],[\"$\",\"circle\",\"20\",{\"cx\":92,\"cy\":76,\"r\":1}],[\"$\",\"circle\",\"21\",{\"cx\":126,\"cy\":76,\"r\":1}],[\"$\",\"circle\",\"22\",{\"cx\":160,\"cy\":76,\"r\":1}],[\"$\",\"circle\",\"23\",{\"cx\":194,\"cy\":76,\"r\":1}],[\"$\",\"circle\",\"24\",{\"cx\":228,\"cy\":76,\"r\":1}],[\"$\",\"circle\",\"25\",{\"cx\":262,\"cy\":76,\"r\":1}],[\"$\",\"circle\",\"26\",{\"cx\":296,\"cy\":76,\"r\":1}],[\"$\",\"circle\",\"27\",{\"cx\":24,\"cy\":101,\"r\":1}],[\"$\",\"circle\",\"28\",{\"cx\":58,\"cy\":101,\"r\":1}],[\"$\",\"circle\",\"29\",{\"cx\":92,\"cy\":101,\"r\":1}],[\"$\",\"circle\",\"30\",{\"cx\":126,\"cy\":101,\"r\":1}],[\"$\",\"circle\",\"31\",{\"cx\":160,\"cy\":101,\"r\":1}],[\"$\",\"circle\",\"32\",{\"cx\":194,\"cy\":101,\"r\":1}],[\"$\",\"circle\",\"33\",{\"cx\":228,\"cy\":101,\"r\":1}],[\"$\",\"circle\",\"34\",{\"cx\":262,\"cy\":101,\"r\":1}],[\"$\",\"circle\",\"35\",{\"cx\":296,\"cy\":101,\"r\":1}]]}],false,[\"$\",\"g\",null,{\"children\":[[\"$\",\"line\",null,{\"x1\":96,\"y1\":64,\"x2\":224,\"y2\":64,\"className\":\"mb-edge\"}],[[\"$\",\"g\",\"0\",{\"className\":\"mb-rnode mb-rn0\",\"children\":[[\"$\",\"circle\",null,{\"cx\":96,\"cy\":64,\"r\":15,\"className\":\"mb-rnode-halo\"}],[\"$\",\"circle\",null,{\"cx\":96,\"cy\":64,\"r\":8,\"className\":\"mb-rnode-core\"}]]}],[\"$\",\"g\",\"1\",{\"className\":\"mb-rnode mb-rn1\",\"children\":[[\"$\",\"circle\",null,{\"cx\":160,\"cy\":64,\"r\":15,\"className\":\"mb-rnode-halo\"}],[\"$\",\"circle\",null,{\"cx\":160,\"cy\":64,\"r\":8,\"className\":\"mb-rnode-core\"}]]}],[\"$\",\"g\",\"2\",{\"className\":\"mb-rnode mb-rn2\",\"children\":[[\"$\",\"circle\",null,{\"cx\":224,\"cy\":64,\"r\":15,\"className\":\"mb-rnode-halo\"}],[\"$\",\"circle\",null,{\"cx\":224,\"cy\":64,\"r\":8,\"className\":\"mb-rnode-core\"}]]}]],[\"$\",\"circle\",null,{\"cx\":96,\"cy\":64,\"r\":3.2,\"className\":\"mb-signal\"}]]}],false]}]}],[\"$\",\"div\",null,{\"className\":\"mode-head\",\"children\":[[\"$\",\"div\",null,{\"className\":\"mode-title\",\"children\":\"Redundant\"}],\"$undefined\"]}],[\"$\",\"dl\",null,{\"className\":\"kv\",\"children\":[[\"$\",\"div\",\"Privacy\",{\"children\":[[\"$\",\"dt\",null,{\"children\":\"Privacy\"}],[\"$\",\"dd\",null,{\"children\":\"Not confidential. The machines see the input.\"}]]}],[\"$\",\"div\",\"Integrity\",{\"children\":[[\"$\",\"dt\",null,{\"children\":\"Integrity\"}],[\"$\",\"dd\",null,{\"children\":\"q of r independent machines must agree, with hidden audits run in mode A.\"}]]}],[\"$\",\"div\",\"Best for\",{\"children\":[[\"$\",\"dt\",null,{\"children\":\"Best for\"}],[\"$\",\"dd\",null,{\"children\":\"Batch inference, embeddings and data jobs on non-sensitive data.\"}]]}],[\"$\",\"div\",\"Cost\",{\"children\":[[\"$\",\"dt\",null,{\"children\":\"Cost\"}],[\"$\",\"dd\",null,{\"children\":\"r seats, plus the audit rate.\"}]]}]]}]]}],[\"$\",\"$La\",\"P\",{\"delay\":120,\"className\":\"mode-card\",\"children\":[[\"$\",\"div\",null,{\"className\":\"mode-banner mb-p\",\"aria-hidden\":\"true\",\"children\":[\"$\",\"svg\",null,{\"viewBox\":\"0 0 320 128\",\"preserveAspectRatio\":\"xMidYMid slice\",\"className\":\"mb-svg\",\"children\":[[\"$\",\"g\",null,{\"className\":\"mb-grid\",\"fill\":\"currentColor\",\"children\":[[\"$\",\"circle\",\"0\",{\"cx\":24,\"cy\":26,\"r\":1}],[\"$\",\"circle\",\"1\",{\"cx\":58,\"cy\":26,\"r\":1}],[\"$\",\"circle\",\"2\",{\"cx\":92,\"cy\":26,\"r\":1}],[\"$\",\"circle\",\"3\",{\"cx\":126,\"cy\":26,\"r\":1}],[\"$\",\"circle\",\"4\",{\"cx\":160,\"cy\":26,\"r\":1}],[\"$\",\"circle\",\"5\",{\"cx\":194,\"cy\":26,\"r\":1}],[\"$\",\"circle\",\"6\",{\"cx\":228,\"cy\":26,\"r\":1}],[\"$\",\"circle\",\"7\",{\"cx\":262,\"cy\":26,\"r\":1}],[\"$\",\"circle\",\"8\",{\"cx\":296,\"cy\":26,\"r\":1}],[\"$\",\"circle\",\"9\",{\"cx\":24,\"cy\":51,\"r\":1}],[\"$\",\"circle\",\"10\",{\"cx\":58,\"cy\":51,\"r\":1}],[\"$\",\"circle\",\"11\",{\"cx\":92,\"cy\":51,\"r\":1}],[\"$\",\"circle\",\"12\",{\"cx\":126,\"cy\":51,\"r\":1}],[\"$\",\"circle\",\"13\",{\"cx\":160,\"cy\":51,\"r\":1}],[\"$\",\"circle\",\"14\",{\"cx\":194,\"cy\":51,\"r\":1}],[\"$\",\"circle\",\"15\",{\"cx\":228,\"cy\":51,\"r\":1}],[\"$\",\"circle\",\"16\",{\"cx\":262,\"cy\":51,\"r\":1}],[\"$\",\"circle\",\"17\",{\"cx\":296,\"cy\":51,\"r\":1}],[\"$\",\"circle\",\"18\",{\"cx\":24,\"cy\":76,\"r\":1}],[\"$\",\"circle\",\"19\",{\"cx\":58,\"cy\":76,\"r\":1}],[\"$\",\"circle\",\"20\",{\"cx\":92,\"cy\":76,\"r\":1}],[\"$\",\"circle\",\"21\",{\"cx\":126,\"cy\":76,\"r\":1}],[\"$\",\"circle\",\"22\",{\"cx\":160,\"cy\":76,\"r\":1}],[\"$\",\"circle\",\"23\",{\"cx\":194,\"cy\":76,\"r\":1}],[\"$\",\"circle\",\"24\",{\"cx\":228,\"cy\":76,\"r\":1}],[\"$\",\"circle\",\"25\",{\"cx\":262,\"cy\":76,\"r\":1}],[\"$\",\"circle\",\"26\",{\"cx\":296,\"cy\":76,\"r\":1}],[\"$\",\"circle\",\"27\",{\"cx\":24,\"cy\":101,\"r\":1}],[\"$\",\"circle\",\"28\",{\"cx\":58,\"cy\":101,\"r\":1}],[\"$\",\"circle\",\"29\",{\"cx\":92,\"cy\":101,\"r\":1}],[\"$\",\"circle\",\"30\",{\"cx\":126,\"cy\":101,\"r\":1}],[\"$\",\"circle\",\"31\",{\"cx\":160,\"cy\":101,\"r\":1}],[\"$\",\"circle\",\"32\",{\"cx\":194,\"cy\":101,\"r\":1}],[\"$\",\"circle\",\"33\",{\"cx\":228,\"cy\":101,\"r\":1}],[\"$\",\"circle\",\"34\",{\"cx\":262,\"cy\":101,\"r\":1}],[\"$\",\"circle\",\"35\",{\"cx\":296,\"cy\":101,\"r\":1}]]}],false,false,[\"$\",\"g\",null,{\"children\":[[[\"$\",\"circle\",\"0\",{\"cx\":118,\"cy\":40,\"r\":3,\"className\":\"mb-commit mb-c0\"}],[\"$\",\"circle\",\"1\",{\"cx\":118,\"cy\":64,\"r\":3,\"className\":\"mb-commit mb-c1\"}],[\"$\",\"circle\",\"2\",{\"cx\":118,\"cy\":88,\"r\":3,\"className\":\"mb-commit mb-c2\"}]],[\"$\",\"path\",null,{\"d\":\"M124 40h24M124 64h24M124 88h24\",\"className\":\"mb-commit-line\"}],[\"$\",\"circle\",null,{\"cx\":206,\"cy\":64,\"r\":26,\"className\":\"mb-proof-ring\"}],[\"$\",\"path\",null,{\"d\":\"M194 65l8 9 17 -20\",\"className\":\"mb-proof-check\"}]]}]]}]}],[\"$\",\"div\",null,{\"className\":\"mode-head\",\"children\":[[\"$\",\"div\",null,{\"className\":\"mode-title\",\"children\":\"Proven\"}],\"$undefined\"]}],[\"$\",\"dl\",null,{\"className\":\"kv\",\"children\":[[\"$\",\"div\",\"Privacy\",{\"children\":[[\"$\",\"dt\",null,{\"children\":\"Privacy\"}],[\"$\",\"dd\",null,{\"children\":\"The verifier sees only commitments. The prover still sees the input.\"}]]}],[\"$\",\"div\",\"Integrity\",{\"children\":[[\"$\",\"dt\",null,{\"children\":\"Integrity\"}],[\"$\",\"dd\",null,{\"children\":\"A zk-STARK proof that you check against the input commitment.\"}]]}],[\"$\",\"div\",\"Best for\",{\"children\":[[\"$\",\"dt\",null,{\"children\":\"Best for\"}],[\"$\",\"dd\",null,{\"children\":\"Small models and deterministic jobs.\"}]]}],[\"$\",\"div\",\"Cost\",{\"children\":[[\"$\",\"dt\",null,{\"children\":\"Cost\"}],[\"$\",\"dd\",null,{\"children\":\"Proving is quoted per job.\"}]]}]]}]]}]]}]]}]}],[\"$\",\"div\",null,{\"className\":\"section-divider\",\"aria-hidden\":\"true\"}],[\"$\",\"section\",null,{\"className\":\"section\",\"id\":\"how\",\"style\":{\"paddingTop\":40},\"children\":[\"$\",\"div\",null,{\"className\":\"container\",\"children\":[[\"$\",\"$La\",null,{\"className\":\"section-head\",\"children\":[[\"$\",\"p\",null,{\"className\":\"eyebrow\",\"children\":\"How a job runs\"}],[\"$\",\"h2\",null,{\"className\":\"h1\",\"children\":\"Four steps, each one checkable\"}]]}],[\"$\",\"$La\",null,{\"className\":\"steps\",\"children\":[[\"$\",\"div\",\"Sign an intent\",{\"className\":\"step\",\"children\":[[\"$\",\"span\",null,{\"className\":\"step-n\",\"children\":[\"0\",1]}],[\"$\",\"div\",null,{\"className\":\"h3\",\"children\":\"Sign an intent\"}],[\"$\",\"p\",null,{\"className\":\"muted small\",\"style\":{\"lineHeight\":1.65},\"children\":\"Describe the job, the assurance mode and a price ceiling, then sign it with your wallet. Inputs are committed by hash. They are not uploaded to us.\"}]]}],[\"$\",\"div\",\"Match and attest\",{\"className\":\"step\",\"children\":[[\"$\",\"span\",null,{\"className\":\"step-n\",\"children\":[\"0\",2]}],[\"$\",\"div\",null,{\"className\":\"h3\",\"children\":\"Match and attest\"}],[\"$\",\"p\",null,{\"className\":\"muted small\",\"style\":{\"lineHeight\":1.65},\"children\":\"The scheduler picks machines by reputation, price and latency. In mode A the enclave proves which code it runs before any key is released to it.\"}]]}],[\"$\",\"div\",\"Run\",{\"className\":\"step\",\"children\":[[\"$\",\"span\",null,{\"className\":\"step-n\",\"children\":[\"0\",3]}],[\"$\",\"div\",null,{\"className\":\"h3\",\"children\":\"Run\"}],[\"$\",\"p\",null,{\"className\":\"muted small\",\"style\":{\"lineHeight\":1.65},\"children\":\"Transport uses TLS 1.3 with hybrid X25519 and ML-KEM-768 key exchange. Data is decrypted only inside the enclave, or sent to independent seats in mode R.\"}]]}],[\"$\",\"div\",\"Verify, then settle\",{\"className\":\"step\",\"children\":[[\"$\",\"span\",null,{\"className\":\"step-n\",\"children\":[\"0\",4]}],[\"$\",\"div\",null,{\"className\":\"h3\",\"children\":\"Verify, then settle\"}],[\"$\",\"p\",null,{\"className\":\"muted small\",\"style\":{\"lineHeight\":1.65},\"children\":\"Results return with a signed receipt and a BLAKE3 commitment that you check in the browser. Payment releases after verification, not before.\"}]]}]]}]]}]}],[\"$\",\"section\",null,{\"className\":\"section-sm\",\"children\":[\"$\",\"div\",null,{\"className\":\"container\",\"children\":[\"$\",\"$La\",null,{\"className\":\"quote\",\"children\":[[\"$\",\"svg\",null,{\"width\":22,\"height\":22,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":1.7,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"aria-hidden\":\"true\",\"style\":{\"color\":\"var(--brand-2)\"},\"children\":[\"$\",\"path\",null,{\"d\":\"M6 11h12v10H6zM8.5 11V8a3.5 3.5 0 0 1 7 0v3\"}]}],[\"$\",\"blockquote\",null,{\"children\":\"The person who owns the GPU should be able to earn from it without ever learning what ran on it.\"}],[\"$\",\"p\",null,{\"className\":\"muted small\",\"children\":\"The design goal behind TasQ\"}]]}]}]}],[\"$\",\"div\",null,{\"className\":\"section-divider\",\"aria-hidden\":\"true\"}],[\"$\",\"section\",null,{\"className\":\"section\",\"id\":\"evidence\",\"style\":{\"paddingTop\":40},\"children\":[\"$\",\"div\",null,{\"className\":\"container\",\"children\":[[\"$\",\"$La\",null,{\"className\":\"section-head\",\"children\":[[\"$\",\"p\",null,{\"className\":\"eyebrow\",\"children\":\"Evidence\"}],[\"$\",\"h2\",null,{\"className\":\"h1\",\"children\":\"Numbers, with the data behind them\"}],[\"$\",\"p\",null,{\"className\":\"lead\",\"children\":\"Each number links to the script and the raw data behind it.\"}]]}],[\"$\",\"div\",null,{\"className\":\"grid g4\",\"children\":[[\"$\",\"$La\",\"Hybrid X25519 and ML-KEM-768 key agreement, one side.\",{\"delay\":0,\"children\":[\"$\",\"$L9\",null,{\"href\":\"/benchmark/crypto\",\"className\":\"stat card-hover\",\"style\":{\"height\":\"100%\"},\"children\":[[\"$\",\"span\",null,{\"className\":\"stat-v\",\"children\":\"0.22 ms\"}],[\"$\",\"span\",null,{\"className\":\"stat-l\",\"children\":\"Hybrid X25519 and ML-KEM-768 key agreement, one side.\"}],[\"$\",\"span\",null,{\"className\":\"stat-src\",\"style\":{\"marginTop\":\"auto\",\"paddingTop\":8,\"justifyContent\":\"flex-end\"},\"children\":[\"$\",\"svg\",null,{\"width\":15,\"height\":15,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":1.7,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"aria-hidden\":\"true\",\"children\":[\"$\",\"path\",null,{\"d\":\"M7 17 17 7M8 7h9v9\"}]}]}]]}]}],[\"$\",\"$La\",\"Merkle root over 65,536 output chunks with BLAKE3.\",{\"delay\":50,\"children\":[\"$\",\"$L9\",null,{\"href\":\"/benchmark/crypto\",\"className\":\"stat card-hover\",\"style\":{\"height\":\"100%\"},\"children\":[[\"$\",\"span\",null,{\"className\":\"stat-v\",\"children\":\"60 ms\"}],[\"$\",\"span\",null,{\"className\":\"stat-l\",\"children\":\"Merkle root over 65,536 output chunks with BLAKE3.\"}],[\"$\",\"span\",null,{\"className\":\"stat-src\",\"style\":{\"marginTop\":\"auto\",\"paddingTop\":8,\"justifyContent\":\"flex-end\"},\"children\":[\"$\",\"svg\",null,{\"width\":15,\"height\":15,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":1.7,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"aria-hidden\":\"true\",\"children\":[\"$\",\"path\",null,{\"d\":\"M7 17 17 7M8 7h9v9\"}]}]}]]}]}],[\"$\",\"$La\",\"Largest gap between the quorum capture formula and 400,000 draws.\",{\"delay\":100,\"children\":[\"$\",\"$L9\",null,{\"href\":\"/benchmark/quorum\",\"className\":\"stat card-hover\",\"style\":{\"height\":\"100%\"},\"children\":[[\"$\",\"span\",null,{\"className\":\"stat-v\",\"children\":\"0.0012\"}],[\"$\",\"span\",null,{\"className\":\"stat-l\",\"children\":\"Largest gap between the quorum capture formula and 400,000 draws.\"}],[\"$\",\"span\",null,{\"className\":\"stat-src\",\"style\":{\"marginTop\":\"auto\",\"paddingTop\":8,\"justifyContent\":\"flex-end\"},\"children\":[\"$\",\"svg\",null,{\"width\":15,\"height\":15,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":1.7,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"aria-hidden\":\"true\",\"children\":[\"$\",\"path\",null,{\"d\":\"M7 17 17 7M8 7h9v9\"}]}]}]]}]}],[\"$\",\"$La\",\"Attack break-even versus the admission rule, at every audit rate tested.\",{\"delay\":150,\"children\":[\"$\",\"$L9\",null,{\"href\":\"/benchmark/quorum\",\"className\":\"stat card-hover\",\"style\":{\"height\":\"100%\"},\"children\":[[\"$\",\"span\",null,{\"className\":\"stat-v\",\"children\":\"Within 5%\"}],[\"$\",\"span\",null,{\"className\":\"stat-l\",\"children\":\"Attack break-even versus the admission rule, at every audit rate tested.\"}],[\"$\",\"span\",null,{\"className\":\"stat-src\",\"style\":{\"marginTop\":\"auto\",\"paddingTop\":8,\"justifyContent\":\"flex-end\"},\"children\":[\"$\",\"svg\",null,{\"width\":15,\"height\":15,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":1.7,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"aria-hidden\":\"true\",\"children\":[\"$\",\"path\",null,{\"d\":\"M7 17 17 7M8 7h9v9\"}]}]}]]}]}],[\"$\",\"$La\",\"Wrong results accepted late in a run, down from 1 to 2% at the start.\",{\"delay\":0,\"children\":[\"$\",\"$L9\",null,{\"href\":\"/benchmark/scheduler\",\"className\":\"stat card-hover\",\"style\":{\"height\":\"100%\"},\"children\":[[\"$\",\"span\",null,{\"className\":\"stat-v\",\"children\":\"0.1%\"}],[\"$\",\"span\",null,{\"className\":\"stat-l\",\"children\":\"Wrong results accepted late in a run, down from 1 to 2% at the start.\"}],[\"$\",\"span\",null,{\"className\":\"stat-src\",\"style\":{\"marginTop\":\"auto\",\"paddingTop\":8,\"justifyContent\":\"flex-end\"},\"children\":[\"$\",\"svg\",null,{\"width\":15,\"height\":15,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":1.7,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"aria-hidden\":\"true\",\"children\":[\"$\",\"path\",null,{\"d\":\"M7 17 17 7M8 7h9v9\"}]}]}]]}]}],[\"$\",\"$La\",\"Adversarial nodes paused by reputation within a single run.\",{\"delay\":50,\"children\":[\"$\",\"$L9\",null,{\"href\":\"/benchmark/scheduler\",\"className\":\"stat card-hover\",\"style\":{\"height\":\"100%\"},\"children\":[[\"$\",\"span\",null,{\"className\":\"stat-v\",\"children\":\"67 to 87%\"}],[\"$\",\"span\",null,{\"className\":\"stat-l\",\"children\":\"Adversarial nodes paused by reputation within a single run.\"}],[\"$\",\"span\",null,{\"className\":\"stat-src\",\"style\":{\"marginTop\":\"auto\",\"paddingTop\":8,\"justifyContent\":\"flex-end\"},\"children\":[\"$\",\"svg\",null,{\"width\":15,\"height\":15,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":1.7,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"aria-hidden\":\"true\",\"children\":[\"$\",\"path\",null,{\"d\":\"M7 17 17 7M8 7h9v9\"}]}]}]]}]}],[\"$\",\"$La\",\"Fault rate an honest node can have and never be excluded over 300 periods.\",{\"delay\":100,\"children\":[\"$\",\"$L9\",null,{\"href\":\"/benchmark/reputation\",\"className\":\"stat card-hover\",\"style\":{\"height\":\"100%\"},\"children\":[[\"$\",\"span\",null,{\"className\":\"stat-v\",\"children\":\"5%\"}],[\"$\",\"span\",null,{\"className\":\"stat-l\",\"children\":\"Fault rate an honest node can have and never be excluded over 300 periods.\"}],[\"$\",\"span\",null,{\"className\":\"stat-src\",\"style\":{\"marginTop\":\"auto\",\"paddingTop\":8,\"justifyContent\":\"flex-end\"},\"children\":[\"$\",\"svg\",null,{\"width\":15,\"height\":15,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":1.7,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"aria-hidden\":\"true\",\"children\":[\"$\",\"path\",null,{\"d\":\"M7 17 17 7M8 7h9v9\"}]}]}]]}]}],[\"$\",\"$La\",\"Attested price premium at which mode A stops being cheaper than three-way redundancy.\",{\"delay\":150,\"children\":[\"$\",\"$L9\",null,{\"href\":\"/benchmark/gpu-model\",\"className\":\"stat card-hover\",\"style\":{\"height\":\"100%\"},\"children\":[[\"$\",\"span\",null,{\"className\":\"stat-v\",\"children\":\"About 3x\"}],[\"$\",\"span\",null,{\"className\":\"stat-l\",\"children\":\"Attested price premium at which mode A stops being cheaper than three-way redundancy.\"}],[\"$\",\"span\",null,{\"className\":\"stat-src\",\"style\":{\"marginTop\":\"auto\",\"paddingTop\":8,\"justifyContent\":\"flex-end\"},\"children\":[\"$\",\"svg\",null,{\"width\":15,\"height\":15,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":1.7,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"aria-hidden\":\"true\",\"children\":[\"$\",\"path\",null,{\"d\":\"M7 17 17 7M8 7h9v9\"}]}]}]]}]}]]}],[\"$\",\"div\",null,{\"style\":{\"marginTop\":28},\"children\":[\"$\",\"$L9\",null,{\"href\":\"/benchmark\",\"className\":\"arrow-link\",\"children\":[\"All benchmarks and raw data \",[\"$\",\"svg\",null,{\"width\":15,\"height\":15,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":1.7,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"aria-hidden\":\"true\",\"children\":[\"$\",\"path\",null,{\"d\":\"M5 12h14M13 6l6 6-6 6\"}]}]]}]}]]}]}],[\"$\",\"section\",null,{\"className\":\"section-sm cta-section\",\"children\":[\"$\",\"div\",null,{\"className\":\"container\",\"children\":[\"$\",\"$La\",null,{\"className\":\"cta-band\",\"children\":[[\"$\",\"$Lc\",null,{}],[\"$\",\"div\",null,{\"className\":\"cta-band-inner\",\"children\":[[\"$\",\"div\",null,{\"className\":\"stack\",\"style\":{\"gap\":12,\"maxWidth\":560},\"children\":[[\"$\",\"h2\",null,{\"className\":\"h2\",\"children\":\"Start with a signed intent\"}],[\"$\",\"p\",null,{\"className\":\"muted\",\"children\":\"Connect a wallet, price a confidential job and see exactly what would be sent before anything is.\"}]]}],[\"$\",\"div\",null,{\"className\":\"row wrap\",\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/app\",\"className\":\"btn btn-primary btn-lg\",\"onClick\":\"$undefined\",\"children\":[\"Launch app\",[\"$\",\"svg\",null,{\"width\":16,\"height\":16,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":1.7,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"aria-hidden\":\"true\",\"children\":[\"$\",\"path\",null,{\"d\":\"M5 12h14M13 6l6 6-6 6\"}]}]]}],[\"$\",\"a\",null,{\"href\":\"https://github.com/tasqProject\",\"target\":\"_blank\",\"rel\":\"noreferrer\",\"className\":\"btn btn-ghost btn-lg\",\"children\":[[\"$\",\"svg\",null,{\"width\":16,\"height\":16,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":1.7,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"aria-hidden\":\"true\",\"children\":[\"$\",\"path\",null,{\"d\":\"M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21\"}]}],\"GitHub\"]}]]}]]}]]}]}]}]]}],[\"$\",\"$Ld\",null,{}]],null],null],null]},[[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/d82c0453da8e13e4.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"en\",\"className\":\"__variable_8adcd2 __variable_46451f __variable_5dce4b\",\"children\":[\"$\",\"body\",null,{\"children\":[[\"$\",\"$Le\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$Lf\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":\"404\"}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],\"notFoundStyles\":[]}],[\"$\",\"$L10\",null,{}]]}]}]],null],null],\"couldBeIntercepted\":false,\"initialHead\":[null,\"$L11\"],\"globalErrorComponent\":\"$12\",\"missingSlots\":\"$W13\"}]\n"])</script>
+    <script>self.__next_f.push([1, "11:[[\"$\",\"meta\",\"0\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}],[\"$\",\"meta\",\"1\",{\"name\":\"theme-color\",\"content\":\"#07060b\"}],[\"$\",\"meta\",\"2\",{\"name\":\"color-scheme\",\"content\":\"dark\"}],[\"$\",\"meta\",\"3\",{\"charSet\":\"utf-8\"}],[\"$\",\"title\",\"4\",{\"children\":\"TasQ | Private AI compute\"}],[\"$\",\"meta\",\"5\",{\"name\":\"description\",\"content\":\"Rent and lend GPU compute for AI without exposing your models or data. Attested enclaves, redundant execution with hidden audits, and proofs where they are practical.\"}],[\"$\",\"meta\",\"6\",{\"name\":\"application-name\",\"content\":\"TasQ\"}],[\"$\",\"link\",\"7\",{\"rel\":\"author\",\"href\":\"https://tasqnetwork.io\"}],[\"$\",\"meta\",\"8\",{\"name\":\"author\",\"content\":\"The TasQ Project\"}],[\"$\",\"meta\",\"9\",{\"name\":\"keywords\",\"content\":\"private AI compute,confidential computing,attested enclaves,trusted execution environment,GPU marketplace,AI inference,verifiable compute,post-quantum cryptography,TasQ\"}],[\"$\",\"meta\",\"10\",{\"name\":\"creator\",\"content\":\"The TasQ Project\"}],[\"$\",\"meta\",\"11\",{\"name\":\"publisher\",\"content\":\"The TasQ Project\"}],[\"$\",\"meta\",\"12\",{\"name\":\"robots\",\"content\":\"index, follow\"}],[\"$\",\"meta\",\"13\",{\"name\":\"googlebot\",\"content\":\"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1\"}],[\"$\",\"meta\",\"14\",{\"name\":\"category\",\"content\":\"technology\"}],[\"$\",\"link\",\"15\",{\"rel\":\"canonical\",\"href\":\"https://tasqnetwork.io\"}],[\"$\",\"meta\",\"16\",{\"property\":\"og:title\",\"content\":\"TasQ | Private AI compute\"}],[\"$\",\"meta\",\"17\",{\"property\":\"og:description\",\"content\":\"Private AI compute. The machine owner never sees what you run, and you only pay for results you can verify.\"}],[\"$\",\"meta\",\"18\",{\"property\":\"og:url\",\"content\":\"https://tasqnetwork.io\"}],[\"$\",\"meta\",\"19\",{\"property\":\"og:site_name\",\"content\":\"TasQ\"}],[\"$\",\"meta\",\"20\",{\"property\":\"og:locale\",\"content\":\"en_US\"}],[\"$\",\"meta\",\"21\",{\"property\":\"og:image:type\",\"content\":\"image/png\"}],[\"$\",\"meta\",\"22\",{\"property\":\"og:image:width\",\"content\":\"1200\"}],[\"$\",\"meta\",\"23\",{\"property\":\"og:image:height\",\"content\":\"630\"}],[\"$\",\"meta\",\"24\",{\"property\":\"og:image:alt\",\"content\":\"TasQ. Your AI, your data. Private AI compute with attested enclaves, hidden audits and verifiable results.\"}],[\"$\",\"meta\",\"25\",{\"property\":\"og:image\",\"content\":\"https://tasqnetwork.io/opengraph-image.png?4025671aed8fba66\"}],[\"$\",\"meta\",\"26\",{\"property\":\"og:type\",\"content\":\"website\"}],[\"$\",\"meta\",\"27\",{\"name\":\"twitter:card\",\"content\":\"summary_large_image\"}],[\"$\",\"meta\",\"28\",{\"name\":\"twitter:title\",\"content\":\"TasQ | Private AI compute\"}],[\"$\",\"meta\",\"29\",{\"name\":\"twitter:description\",\"content\":\"Private AI compute. The machine owner never sees what you run, and you only pay for results you can verify.\"}],[\"$\",\"meta\",\"30\",{\"name\":\"twitter:image:type\",\"content\":\"image/png\"}],[\"$\",\"meta\",\"31\",{\"name\":\"twitter:image:width\",\"content\":\"1200\"}],[\"$\",\"meta\",\"32\",{\"name\":\"twitter:image:height\",\"content\":\"630\"}],[\"$\",\"meta\",\"33\",{\"name\":\"twitter:image:alt\",\"content\":\"TasQ. Your AI, your data. Private AI compute with attested enclaves, hidden audits and verifiable results.\"}],[\"$\",\"meta\",\"34\",{\"name\":\"twitter:image\",\"content\":\"https://tasqnetwork.io/twitter-image.png?4025671aed8fba66\"}],[\"$\",\"link\",\"35\",{\"rel\":\"icon\",\"href\":\"/icon.png?3a38c5fb4c69e589\",\"type\":\"image/png\",\"sizes\":\"256x256\"}],[\"$\",\"link\",\"36\",{\"rel\":\"apple-touch-icon\",\"href\":\"/apple-icon.png?29dd4eab969f4876\",\"type\":\"image/png\",\"sizes\":\"180x180\"}],[\"$\",\"meta\",\"37\",{\"name\":\"next-size-adjust\"}]]\n"])</script>
+    <script>self.__next_f.push([1, "6:null\n"])</script>
+</body>
+
+</html>
