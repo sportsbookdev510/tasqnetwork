@@ -644,7 +644,7 @@
           symbol: "$TasQ",
           address:
             l.env.NEXT_PUBLIC_TASQ_TOKEN_ADDRESS ||
-            "0xdc453b1405CfE25e2afBA8E7F4272b0a00437777",
+            "0x2ed6599031b783ed6dc6af32beef93df620f55d9",
           decimals: Number(l.env.NEXT_PUBLIC_TASQ_TOKEN_DECIMALS || 18),
           minHold: l.env.NEXT_PUBLIC_TASQ_MIN_HOLD || "",
         },
