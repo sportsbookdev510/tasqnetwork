@@ -69,11 +69,21 @@
       function u(e) {
         let { children: s } = e,
           n = (0, d.Os)(),
-          r = (0, i.useRouter)();
+          r = (0, i.useRouter)(),
+          [t, o] = (0, l.useState)(!1),
+          c =
+            t &&
+            "tasqnetwork.io" !== location.hostname &&
+            "www.tasqnetwork.io" !== location.hostname;
         return ((0, l.useEffect)(() => {
-          n.ready && !n.authenticated && r.replace("/signup");
-        }, [n.ready, n.authenticated, r]),
-        n.ready)
+          o(!0);
+        }, []),
+        (0, l.useEffect)(() => {
+          c || (n.ready && !n.authenticated && r.replace("/signup"));
+        }, [n.ready, n.authenticated, r, c]),
+        c)
+          ? (0, a.jsx)(a.Fragment, { children: s })
+          : n.ready
           ? n.authenticated
             ? (0, a.jsx)(a.Fragment, { children: s })
             : (0, a.jsxs)("div", {

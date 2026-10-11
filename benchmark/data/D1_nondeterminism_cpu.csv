@@ -1,0 +1,3 @@
+variant,bitwise_identical_rows,max_rel_diff_median,max_rel_diff_max,top1_agreement,top5_set_agreement,samples
+reversed_blocks,0.0,3.7534374541792204e-07,6.105928491706436e-07,1.0,1.0,400
+interleaved,0.0,3.7511463801820355e-07,6.334198019430914e-07,1.0,1.0,400

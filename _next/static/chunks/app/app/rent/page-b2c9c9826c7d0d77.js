@@ -735,7 +735,7 @@
           github:
             s.env.NEXT_PUBLIC_GITHUB_URL || "https://github.com/tasqProject",
           gitbook: s.env.NEXT_PUBLIC_GITBOOK_URL || "",
-          x: s.env.NEXT_PUBLIC_X_URL || "https://x.com/tasq_network",
+          x: s.env.NEXT_PUBLIC_X_URL || "https://x.com/tasq_x",
           email: s.env.NEXT_PUBLIC_CONTACT_EMAIL || "",
           paper: "/tasq-yellow-paper.pdf",
         },

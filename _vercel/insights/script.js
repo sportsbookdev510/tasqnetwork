@@ -132,6 +132,11 @@
           );
         }
         async function m(t, e) {
+          if (
+            "tasqnetwork.io" !== location.hostname &&
+            "www.tasqnetwork.io" !== location.hostname
+          )
+            return;
           try {
             await fetch(t, {
               method: "POST",

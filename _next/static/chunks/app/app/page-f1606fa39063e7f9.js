@@ -489,11 +489,21 @@
       function p(e) {
         let { children: s } = e,
           a = (0, d.Os)(),
-          t = (0, r.useRouter)();
+          t = (0, r.useRouter)(),
+          [l, o] = (0, i.useState)(!1),
+          c =
+            l &&
+            "tasqnetwork.io" !== location.hostname &&
+            "www.tasqnetwork.io" !== location.hostname;
         return ((0, i.useEffect)(() => {
-          a.ready && !a.authenticated && t.replace("/signup");
-        }, [a.ready, a.authenticated, t]),
-        a.ready)
+          o(!0);
+        }, []),
+        (0, i.useEffect)(() => {
+          c || (a.ready && !a.authenticated && t.replace("/signup"));
+        }, [a.ready, a.authenticated, t, c]),
+        c)
+          ? (0, n.jsx)(n.Fragment, { children: s })
+          : a.ready
           ? a.authenticated
             ? (0, n.jsx)(n.Fragment, { children: s })
             : (0, n.jsxs)("div", {

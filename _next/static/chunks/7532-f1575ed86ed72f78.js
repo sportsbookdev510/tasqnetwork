@@ -663,7 +663,7 @@
           github:
             n.env.NEXT_PUBLIC_GITHUB_URL || "https://github.com/tasqProject",
           gitbook: n.env.NEXT_PUBLIC_GITBOOK_URL || "",
-          x: n.env.NEXT_PUBLIC_X_URL || "https://x.com/tasq_network",
+          x: n.env.NEXT_PUBLIC_X_URL || "https://x.com/tasq_x",
           email: n.env.NEXT_PUBLIC_CONTACT_EMAIL || "",
           paper: "/tasq-yellow-paper.pdf",
         },
@@ -710,7 +710,7 @@
           symbol: "$TasQ",
           address:
             l.env.NEXT_PUBLIC_TASQ_TOKEN_ADDRESS ||
-            "0xd5db700525a342ed4b81967a5a82a4f903efa170",
+            "0xdc453b1405CfE25e2afBA8E7F4272b0a00437777",
           decimals: Number(l.env.NEXT_PUBLIC_TASQ_TOKEN_DECIMALS || 18),
           minHold: l.env.NEXT_PUBLIC_TASQ_MIN_HOLD || "",
         },

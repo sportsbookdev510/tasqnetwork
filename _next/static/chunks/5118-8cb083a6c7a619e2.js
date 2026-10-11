@@ -383,9 +383,16 @@
         if (!e) throw Error("useWallet must be used inside WalletProvider");
         return e;
       }
+      function y() {
+        return (
+          "undefined" != typeof location &&
+          "tasqnetwork.io" !== location.hostname &&
+          "www.tasqnetwork.io" !== location.hostname
+        );
+      }
       function u(e) {
         let { children: t } = e;
-        return o.Z2
+        return o.Z2 && !y()
           ? (0, a.jsx)(r.z, {
               appId: o.Z2,
               config: {
@@ -401,6 +408,11 @@
                 defaultChain: o.v1,
                 supportedChains: [o.v1],
                 embeddedWallets: { ethereum: { createOnLogin: "off" } },
+                externalWallets: {
+                  coinbaseWallet: {
+                    config: { preference: { options: "eoaOnly" } },
+                  },
+                },
               },
               children: (0, a.jsx)(h, { children: t }),
             })
@@ -564,7 +576,15 @@
               return h;
             },
           };
-        return (0, a.jsx)(c.Provider, { value: f, children: t });
+        return (0, a.jsxs)(a.Fragment, {
+          children: [
+            (0, a.jsx)("img", {
+              src: "/logo-mark.png",
+              style: { display: "none" },
+            }),
+            (0, a.jsx)(c.Provider, { value: f, children: t }),
+          ],
+        });
       }
       let p = function (e) {
         let t =
