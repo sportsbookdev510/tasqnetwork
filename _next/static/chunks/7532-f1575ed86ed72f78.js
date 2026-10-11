@@ -234,17 +234,6 @@
                       (0, l.jsxs)("div", {
                         className: "nav-icos",
                         children: [
-                          (0, l.jsx)("a", {
-                            href: i.lz.github,
-                            className: "nav-social",
-                            "aria-label": "GitHub",
-                            target: "_blank",
-                            rel: "noreferrer",
-                            children: (0, l.jsx)(o.JO, {
-                              name: "github",
-                              size: 18,
-                            }),
-                          }),
                           i.lz.x &&
                             (0, l.jsx)("a", {
                               href: i.lz.x,
@@ -301,17 +290,6 @@
                   (0, l.jsxs)("div", {
                     className: "mobile-social",
                     children: [
-                      (0, l.jsx)("a", {
-                        href: i.lz.github,
-                        target: "_blank",
-                        rel: "noreferrer",
-                        onClick: () => c(!1),
-                        "aria-label": "GitHub",
-                        children: (0, l.jsx)(o.JO, {
-                          name: "github",
-                          size: 18,
-                        }),
-                      }),
                       i.lz.x &&
                         (0, l.jsx)("a", {
                           href: i.lz.x,
@@ -354,17 +332,6 @@
                         className: "row",
                         style: { gap: 8 },
                         children: [
-                          (0, l.jsx)("a", {
-                            className: "btn btn-ghost btn-sm",
-                            href: i.lz.github,
-                            target: "_blank",
-                            rel: "noreferrer",
-                            "aria-label": "GitHub",
-                            children: (0, l.jsx)(o.JO, {
-                              name: "github",
-                              size: 15,
-                            }),
-                          }),
                           i.lz.x &&
                             (0, l.jsx)("a", {
                               className: "btn btn-ghost btn-sm",
@@ -471,14 +438,6 @@
                             children: (0, l.jsx)(n.default, {
                               href: "/token",
                               children: "$TasQ",
-                            }),
-                          }),
-                          (0, l.jsx)("li", {
-                            children: (0, l.jsx)("a", {
-                              href: i.lz.github,
-                              target: "_blank",
-                              rel: "noreferrer",
-                              children: "GitHub",
                             }),
                           }),
                           i.lz.gitbook &&
@@ -638,7 +597,7 @@
           github:
             n.env.NEXT_PUBLIC_GITHUB_URL || "https://github.com/tasqProject",
           gitbook: n.env.NEXT_PUBLIC_GITBOOK_URL || "",
-          x: n.env.NEXT_PUBLIC_X_URL || "https://x.com/tasq_x",
+          x: n.env.NEXT_PUBLIC_X_URL || "https://x.com/tasq_network",
           email: n.env.NEXT_PUBLIC_CONTACT_EMAIL || "",
           paper: "/tasq-yellow-paper.pdf",
         },
