@@ -138,13 +138,6 @@
                         "Benchmarks",
                       ],
                     }),
-                    (0, a.jsxs)("a", {
-                      href: o.lz.paper,
-                      children: [
-                        (0, a.jsx)(t.JO, { name: "doc", size: 17 }),
-                        "Yellow paper",
-                      ],
-                    }),
                   ],
                 }),
                 (0, a.jsxs)("div", {

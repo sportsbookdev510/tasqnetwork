@@ -274,44 +274,6 @@
                     e.href
                   )
                 ),
-                (0, n.jsxs)("a", {
-                  href: "/tasq-yellow-paper.pdf",
-                  className: "card card-hover stack",
-                  style: { gap: 12, borderStyle: "dashed" },
-                  children: [
-                    (0, n.jsxs)("div", {
-                      className: "row-between",
-                      children: [
-                        (0, n.jsx)("span", {
-                          style: {
-                            width: 38,
-                            height: 38,
-                            borderRadius: 10,
-                            display: "grid",
-                            placeItems: "center",
-                            background: "rgba(255,255,255,0.04)",
-                            border: "1px solid var(--line-2)",
-                          },
-                          children: (0, n.jsx)(r.JO, { name: "doc", size: 18 }),
-                        }),
-                        (0, n.jsx)(r.JO, {
-                          name: "arrowUpRight",
-                          size: 16,
-                          style: { color: "var(--faint)" },
-                        }),
-                      ],
-                    }),
-                    (0, n.jsx)("span", {
-                      className: "h4",
-                      children: "Read the yellow paper",
-                    }),
-                    (0, n.jsx)("span", {
-                      className: "muted small",
-                      children:
-                        "Threat model, admission rule and open problems.",
-                    }),
-                  ],
-                }),
               ],
             }),
             (0, n.jsxs)("div", {
@@ -556,13 +518,6 @@
                       children: [
                         (0, n.jsx)(l.JO, { name: "chart", size: 17 }),
                         "Benchmarks",
-                      ],
-                    }),
-                    (0, n.jsxs)("a", {
-                      href: c.lz.paper,
-                      children: [
-                        (0, n.jsx)(l.JO, { name: "doc", size: 17 }),
-                        "Yellow paper",
                       ],
                     }),
                   ],

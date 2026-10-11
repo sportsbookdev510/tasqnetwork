@@ -235,17 +235,6 @@
                         className: "nav-icos",
                         children: [
                           (0, l.jsx)("a", {
-                            href: i.lz.paper,
-                            className: "nav-docs",
-                            "aria-label": "Yellow paper",
-                            target: "_blank",
-                            rel: "noreferrer",
-                            children: (0, l.jsx)(o.JO, {
-                              name: "doc",
-                              size: 19,
-                            }),
-                          }),
-                          (0, l.jsx)("a", {
                             href: i.lz.github,
                             className: "nav-social",
                             "aria-label": "GitHub",
@@ -312,14 +301,6 @@
                   (0, l.jsxs)("div", {
                     className: "mobile-social",
                     children: [
-                      (0, l.jsx)("a", {
-                        href: i.lz.paper,
-                        target: "_blank",
-                        rel: "noreferrer",
-                        onClick: () => c(!1),
-                        "aria-label": "Yellow paper",
-                        children: (0, l.jsx)(o.JO, { name: "doc", size: 18 }),
-                      }),
                       (0, l.jsx)("a", {
                         href: i.lz.github,
                         target: "_blank",
@@ -453,12 +434,6 @@
                       (0, l.jsx)("h4", { children: "Research" }),
                       (0, l.jsxs)("ul", {
                         children: [
-                          (0, l.jsx)("li", {
-                            children: (0, l.jsx)("a", {
-                              href: i.lz.paper,
-                              children: "Yellow paper",
-                            }),
-                          }),
                           (0, l.jsx)("li", {
                             children: (0, l.jsx)(n.default, {
                               href: "/benchmark",
